@@ -1,0 +1,97 @@
+{
+	"description": "Ejemplo de combos de items (solo items, no mezclados con poderes)",
+	"examples": [
+		{
+			"type": "simple_item_combo",
+			"combo_key": "ruby_hilted+diamond_hilted",
+			"components": ["ruby_hilted", "diamond_hilted"],
+			"result_id": "infernal_blade",
+			"result_name": "Infernal Blade",
+			"description": "Una espada forjada con rubíes y diamantes que arde con fuego infernal",
+			"implementation": {
+				"items.json_combos": {
+					"ruby_hilted+diamond_hilted": {
+						"result": "infernal_blade",
+						"type": "item_combo",
+						"name": "Infernal Blade",
+						"description": "Espada de fuego"
+					}
+				},
+				"items.json_combo_items": {
+					"infernal_blade": {
+						"name": "Infernal Blade",
+						"description": "Una espada forjada con rubíes y diamantes que arde con fuego infernal",
+						"image": "assets/items/infernal_blade.png",
+						"type": "weapon",
+						"components": ["ruby_hilted", "diamond_hilted"]
+					}
+				}
+			}
+		},
+		{
+			"type": "triple_item_combo",
+			"combo_key": "ruby_hilted+diamond_hilted+emerald_hilted",
+			"components": ["ruby_hilted", "diamond_hilted", "emerald_hilted"],
+			"result_id": "prismatic_sword",
+			"result_name": "Prismatic Sword",
+			"description": "La espada legendaria que combina el poder de tres gemas",
+			"implementation": {
+				"items.json_combos": {
+					"ruby_hilted+diamond_hilted+emerald_hilted": {
+						"result": "prismatic_sword",
+						"type": "triple_item_combo",
+						"name": "Prismatic Sword",
+						"description": "Espada legendaria de tres gemas"
+					}
+				},
+				"items.json_combo_items": {
+					"prismatic_sword": {
+						"name": "Prismatic Sword",
+						"description": "La espada legendaria que combina el poder de tres gemas",
+						"image": "assets/items/prismatic_sword.png",
+						"type": "weapon",
+						"components": ["ruby_hilted", "diamond_hilted", "emerald_hilted"],
+						"component_count": 3
+					}
+				}
+			}
+		},
+		{
+			"type": "nested_item_combo",
+			"combo_key": "infernal_blade+sapphire_hilted",
+			"components": ["infernal_blade", "sapphire_hilted"],
+			"result_id": "celestial_inferno",
+			"result_name": "Celestial Inferno",
+			"description": "Combo de un combo (infernal_blade) + item base (sapphire_hilted)",
+			"note": "infernal_blade es resultado de ruby_hilted+diamond_hilted",
+			"base_items_needed": ["ruby_hilted", "diamond_hilted", "sapphire_hilted"],
+			"implementation": {
+				"items.json_combos": {
+					"infernal_blade+sapphire_hilted": {
+						"result": "celestial_inferno",
+						"type": "nested_item_combo",
+						"name": "Celestial Inferno",
+						"description": "Fusión celestial del fuego infernal con el zafiro sagrado"
+					}
+				},
+				"items.json_combo_items": {
+					"celestial_inferno": {
+						"name": "Celestial Inferno",
+						"description": "Fusión celestial del fuego infernal con el zafiro sagrado",
+						"image": "assets/items/celestial_inferno.png",
+						"type": "weapon",
+						"components": ["infernal_blade", "sapphire_hilted"],
+						"is_nested": true
+					}
+				}
+			}
+		}
+	],
+	"notes": [
+		"Los items solo se combinan con otros items, NUNCA con poderes",
+		"Soporta combos de 2 o 3 items",
+		"Soporta combos anidados (combo_item + item o combo_item + combo_item)",
+		"Las keys de combo usan '+' para separar componentes",
+		"El orden no importa (se usan permutaciones): ruby+diamond = diamond+ruby"
+	]
+}

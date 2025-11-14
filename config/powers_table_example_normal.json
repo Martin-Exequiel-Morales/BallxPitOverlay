@@ -1,0 +1,142 @@
+{
+  "description": "Ejemplo de fila de un poder NORMAL (básico, sin evolución)",
+  "html_row": "<tr class=\"border-b border-zinc-800 hover:bg-zinc-800/30 transition-colors bg-zinc-900/20 cursor-pointer \"><td class=\"px-6 py-4\"><div class=\"relative inline-block \"><div class=\"w-12 h-12 relative cursor-help\"><img alt=\"Bleed\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-contain\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fballs%2Fball_icon_bleed.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fballs%2Fball_icon_bleed.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fballs%2Fball_icon_bleed.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fballs%2Fball_icon_bleed.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fballs%2Fball_icon_bleed.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fballs%2Fball_icon_bleed.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fballs%2Fball_icon_bleed.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fballs%2Fball_icon_bleed.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fimages%2Fballs%2Fball_icon_bleed.png&amp;w=3840&amp;q=75\"></div></div></td><td class=\"px-6 py-4 text-zinc-300\">1</td><td class=\"px-6 py-4 text-white font-medium\">Bleed</td><td class=\"px-6 py-4 text-zinc-300\">Inflicts 2 stacks of bleed. Bleeding enemies receive 1 damage per stack when hit by a ball (max 8 stacks)</td><td class=\"px-6 py-4\"><div class=\"flex flex-wrap gap-1\"><span class=\"px-2 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 text-xs font-semibold rounded\">Bleed</span><span class=\"px-2 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 text-xs font-semibold rounded\">DoT</span></div></td><td class=\"px-6 py-4\"><div class=\"text-center\"><span class=\"text-zinc-500\">-</span></div></td></tr>",
+  
+  "parsed_data": {
+    "icon": {
+      "alt": "Bleed",
+      "src": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_bleed.png&w=3840&q=75",
+      "original_path": "/images/balls/ball_icon_bleed.png"
+    },
+    "id": "1",
+    "name": "Bleed",
+    "description": "Inflicts 2 stacks of bleed. Bleeding enemies receive 1 damage per stack when hit by a ball (max 8 stacks)",
+    "traits": [
+      "Bleed",
+      "DoT"
+    ],
+    "evolution_recipe": null,
+    "is_basic_power": true,
+    "has_evolution": false
+  },
+  
+  "html_structure_analysis": {
+    "columns": [
+      {
+        "index": 0,
+        "type": "icon",
+        "selector": "td:nth-child(1) img",
+        "attributes": {
+          "alt": "power_name",
+          "src": "image_url",
+          "srcset": "responsive_images"
+        }
+      },
+      {
+        "index": 1,
+        "type": "id",
+        "selector": "td:nth-child(2)",
+        "content": "1",
+        "note": "ID numérico del poder"
+      },
+      {
+        "index": 2,
+        "type": "name",
+        "selector": "td:nth-child(3)",
+        "content": "Bleed",
+        "note": "Nombre del poder"
+      },
+      {
+        "index": 3,
+        "type": "description",
+        "selector": "td:nth-child(4)",
+        "content": "Inflicts 2 stacks of bleed. Bleeding enemies receive 1 damage per stack when hit by a ball (max 8 stacks)",
+        "note": "Descripción detallada del efecto"
+      },
+      {
+        "index": 4,
+        "type": "traits",
+        "selector": "td:nth-child(5) span",
+        "content": ["Bleed", "DoT"],
+        "note": "Tags/categorías del poder (múltiples spans)"
+      },
+      {
+        "index": 5,
+        "type": "evolution_recipe",
+        "selector": "td:nth-child(6)",
+        "content": "-",
+        "note": "Poderes básicos NO tienen receta de evolución, muestran '-'"
+      }
+    ],
+    "row_class": "border-b border-zinc-800 hover:bg-zinc-800/30 transition-colors bg-zinc-900/20 cursor-pointer",
+    "distinguishing_feature": "Evolution Recipe column shows '-' (text-zinc-500) for basic powers"
+  },
+  
+  "mapping_to_powers_json": {
+    "power_id": "bleed",
+    "power_entry": {
+      "name": "Bleed",
+      "description": "Inflicts 2 stacks of bleed. Bleeding enemies receive 1 damage per stack when hit by a ball (max 8 stacks)",
+      "image": "assets/powers/bleed.png",
+      "traits": ["Bleed", "DoT"],
+      "is_basic": true,
+      "game_id": 1
+    }
+  },
+  
+  "comparison_with_other_examples": {
+    "vs_simple_combo": {
+      "difference": "Simple combo (Swamp) tiene Evolution Recipe con 2 poderes (Poison + Earthquake)",
+      "bleed_evolution": "Bleed muestra '-' en Evolution Recipe (es poder básico)"
+    },
+    "vs_multiple_recipes": {
+      "difference": "Vampire Lord tiene múltiples recetas de evolución separadas por ','",
+      "bleed_evolution": "Bleed no tiene ninguna receta (es componente, no resultado)"
+    },
+    "vs_triple_combo": {
+      "difference": "Nosferatu requiere 3 poderes evolucionados (Vampire Lord + Spider Queen + Mosquito King)",
+      "bleed_evolution": "Bleed es poder base que se usa PARA crear combos, no es resultado"
+    }
+  },
+  
+  "implementation_notes": {
+    "detection": "Si Evolution Recipe column contiene solo '-' → es poder básico",
+    "storage": "Guardar en powers.json section 'powers', NO en 'combos'",
+    "traits_extraction": "Múltiples <span> tags dentro de td:nth-child(5)",
+    "image_path": "Extraer de srcset o src, formato: /images/balls/ball_icon_{power_name}.png",
+    "usage": "Poder básico puede ser componente en combos simples, múltiples o triples"
+  },
+  
+  "all_power_types_summary": {
+    "basic_power": {
+      "example": "Bleed",
+      "evolution_recipe": "-",
+      "characteristics": "Poder inicial, no requiere combinación"
+    },
+    "simple_combo": {
+      "example": "Swamp",
+      "evolution_recipe": "Poison + Earthquake",
+      "characteristics": "Resultado de 2 poderes básicos"
+    },
+    "multiple_recipes": {
+      "example": "Vampire Lord",
+      "evolution_recipe": "Vampire + Bleed, Vampire + Dark",
+      "characteristics": "Múltiples caminos al mismo resultado (separados por coma)"
+    },
+    "triple_combo": {
+      "example": "Nosferatu",
+      "evolution_recipe": "Vampire Lord + Spider Queen + Mosquito King",
+      "characteristics": "Requiere 3 componentes (pueden ser combos o básicos)"
+    }
+  },
+  
+  "scraping_logic": {
+    "step_1": "Iterar todas las filas <tr>",
+    "step_2": "Para cada fila, extraer 6 columnas",
+    "step_3": "Verificar Evolution Recipe (td:nth-child(6))",
+    "step_4_if_dash": "Si contiene '-' → agregar a powers",
+    "step_5_if_plus": "Si contiene '+' → parsear receta y agregar a combos",
+    "step_6_if_comma": "Si contiene ',' → múltiples recetas para mismo resultado",
+    "step_7_count_plus": "Contar '+' en receta: 1=simple, 2=triple combo"
+  }
+}

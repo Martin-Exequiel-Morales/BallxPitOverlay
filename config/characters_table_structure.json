@@ -1,0 +1,168 @@
+{
+	"table_type": "characters",
+	"description": "Estructura de la tabla HTML de personajes del juego",
+	"url_expected": "/characters o similar",
+
+	"table_head_html": "<tr class=\"bg-zinc-800/50 border-b border-zinc-700\"><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-left \">HUD</th><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-left \">Portrait</th><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-left \">Name</th><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-center \">Difficulty</th><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-center \">Starting Ball</th><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-left \">Quirks</th><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-left \">Unlock Method</th></tr>",
+
+	"columns": [
+		{
+			"index": 0,
+			"name": "HUD",
+			"type": "image",
+			"alignment": "left",
+			"selector": "td:nth-child(1) img",
+			"description": "Icono del personaje que aparece en el HUD del juego",
+			"expected_attributes": ["src", "alt", "srcset"]
+		},
+		{
+			"index": 1,
+			"name": "Portrait",
+			"type": "image",
+			"alignment": "left",
+			"selector": "td:nth-child(2) img",
+			"description": "Retrato/avatar del personaje",
+			"expected_attributes": ["src", "alt", "srcset"]
+		},
+		{
+			"index": 2,
+			"name": "Name",
+			"type": "text",
+			"alignment": "left",
+			"selector": "td:nth-child(3)",
+			"description": "Nombre del personaje",
+			"usage": "Identificador principal del personaje"
+		},
+		{
+			"index": 3,
+			"name": "Difficulty",
+			"type": "badge/rating",
+			"alignment": "center",
+			"selector": "td:nth-child(4)",
+			"description": "Nivel de dificultad del personaje",
+			"possible_values": ["Easy", "Medium", "Hard", "Expert"],
+			"usage": "Clasificación de dificultad para jugadores"
+		},
+		{
+			"index": 4,
+			"name": "Starting Ball",
+			"type": "power_reference",
+			"alignment": "center",
+			"selector": "td:nth-child(5)",
+			"description": "Poder/bola inicial del personaje",
+			"usage": "Referencia al poder con el que empieza el personaje",
+			"expected_format": "Nombre del poder o imagen + nombre"
+		},
+		{
+			"index": 5,
+			"name": "Quirks",
+			"type": "text/list",
+			"alignment": "left",
+			"selector": "td:nth-child(6)",
+			"description": "Habilidades especiales o características únicas del personaje",
+			"usage": "Descripción de mecánicas especiales del personaje"
+		},
+		{
+			"index": 6,
+			"name": "Unlock Method",
+			"type": "text",
+			"alignment": "left",
+			"selector": "td:nth-child(7)",
+			"description": "Cómo desbloquear el personaje",
+			"possible_values": [
+				"Available from start",
+				"Win X runs",
+				"Complete achievement",
+				"Secret unlock"
+			],
+			"usage": "Condiciones para desbloquear el personaje"
+		}
+	],
+
+	"total_columns": 7,
+
+	"differences_from_other_tables": {
+		"vs_powers": "7 columnas vs 6, incluye imágenes duales (HUD + Portrait)",
+		"vs_items": "7 columnas vs 5, tiene Difficulty y Unlock Method",
+		"unique_features": [
+			"Dos imágenes por personaje (HUD icon + Portrait)",
+			"Difficulty rating (probablemente con badges de color)",
+			"Starting Ball referencia a tabla de poderes",
+			"Unlock Method describe progresión del juego"
+		]
+	},
+
+	"mapping_to_characters_json": {
+		"structure": {
+			"characters": {
+				"character_id_slug": {
+					"name": "extracted from Name column",
+					"hud_icon": "extracted from HUD img src",
+					"portrait": "extracted from Portrait img src",
+					"difficulty": "extracted from Difficulty column",
+					"starting_ball": "extracted from Starting Ball (poder inicial)",
+					"quirks": "extracted from Quirks column",
+					"unlock_method": "extracted from Unlock Method column",
+					"is_unlocked": false
+				}
+			}
+		}
+	},
+
+	"html_selectors": {
+		"table_selector": "table",
+		"header_row": "tr.bg-zinc-800\\/50",
+		"data_rows": "tr.border-b.border-zinc-800",
+		"hud_icon_img": "td:nth-child(1) img",
+		"portrait_img": "td:nth-child(2) img",
+		"name_cell": "td:nth-child(3)",
+		"difficulty_cell": "td:nth-child(4)",
+		"starting_ball_cell": "td:nth-child(5)",
+		"quirks_cell": "td:nth-child(6)",
+		"unlock_method_cell": "td:nth-child(7)"
+	},
+
+	"expected_row_structure": {
+		"classes": "border-b border-zinc-800 hover:bg-zinc-800/30 transition-colors",
+		"cells": [
+			"HUD Icon (img)",
+			"Portrait (img)",
+			"Name (text)",
+			"Difficulty (badge, centered)",
+			"Starting Ball (poder, centered)",
+			"Quirks (text/list)",
+			"Unlock Method (text)"
+		]
+	},
+
+	"scraping_strategy": {
+		"step_1": "Find characters table",
+		"step_2": "Iterate all <tr> rows (skip header)",
+		"step_3": "For each row, extract 7 columns",
+		"step_4": "Extract HUD icon from first img",
+		"step_5": "Extract Portrait from second img",
+		"step_6": "Extract Name and slugify for character_id",
+		"step_7": "Parse Difficulty badge (color/text)",
+		"step_8": "Extract Starting Ball (may be img + text or just text)",
+		"step_9": "Parse Quirks text (may have multiple lines/paragraphs)",
+		"step_10": "Extract Unlock Method text",
+		"step_11": "Store in characters.json structure"
+	},
+
+	"special_considerations": {
+		"dual_images": "Necesitaremos extraer y guardar ambas imágenes (HUD y Portrait)",
+		"starting_ball_reference": "Debe coincidir con un power_id de powers.json",
+		"difficulty_colors": "Probablemente badges con colores: green=Easy, yellow=Medium, orange=Hard, red=Expert",
+		"quirks_formatting": "Puede contener HTML (listas, párrafos), necesita parsing",
+		"unlock_conditions": "Puede ser texto libre, algunos personajes desbloqueados por defecto"
+	},
+
+	"notes": [
+		"Personajes tienen 2 imágenes (HUD pequeño + Portrait grande)",
+		"Starting Ball debe referenciar poder válido de powers.json",
+		"Difficulty probablemente usa sistema de badges similar a Type en items",
+		"Quirks puede ser texto largo con mecánicas especiales",
+		"Unlock Method indica progresión del juego",
+		"Algunos personajes estarán desbloqueados desde el inicio"
+	]
+}

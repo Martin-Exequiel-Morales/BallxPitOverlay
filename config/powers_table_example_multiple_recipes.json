@@ -1,0 +1,150 @@
+{
+	"example_type": "multiple_recipes",
+	"description": "Ejemplo de fila con MÚLTIPLES FORMAS de crear el mismo combo (separadas por '/')",
+	"parsed_data": {
+		"result": {
+			"id": "57",
+			"name": "Vampire Lord",
+			"description": "Each hit inflicts 3 stacks of bleed. Heals 1 health and consumes all stacks when hitting an enemy with at least 10 stacks of bleed",
+			"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_vampire%20lord.png",
+			"image_filename": "ball_icon_vampire lord.png",
+			"traits": ["Bleed", "Lifesteal", "DoT"]
+		},
+		"evolution_recipe": {
+			"type": "multiple_recipes",
+			"recipe_count": 2,
+			"recipes": [
+				{
+					"recipe_id": 1,
+					"components": [
+						{
+							"name": "Vampire",
+							"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_vampire.png",
+							"image_filename": "ball_icon_vampire.png",
+							"is_combo": false
+						},
+						{
+							"name": "Bleed",
+							"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_bleed.png",
+							"image_filename": "ball_icon_bleed.png",
+							"is_combo": false
+						}
+					],
+					"formula": "Vampire + Bleed = Vampire Lord"
+				},
+				{
+					"recipe_id": 2,
+					"components": [
+						{
+							"name": "Vampire",
+							"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_vampire.png",
+							"image_filename": "ball_icon_vampire.png",
+							"is_combo": false
+						},
+						{
+							"name": "Dark",
+							"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_dark.png",
+							"image_filename": "ball_icon_dark.png",
+							"is_combo": false
+						}
+					],
+					"formula": "Vampire + Dark = Vampire Lord"
+				}
+			],
+			"separator": "/"
+		}
+	},
+	"mapping_to_powers_json": {
+		"powers": {
+			"vampire": {
+				"name": "Vampire",
+				"description": "Poder base de vampiro",
+				"type": "basic",
+				"image": "assets/powers/ball_icon_vampire.png"
+			},
+			"bleed": {
+				"name": "Bleed",
+				"description": "Poder base de sangrado",
+				"type": "basic",
+				"image": "assets/powers/ball_icon_bleed.png"
+			},
+			"dark": {
+				"name": "Dark",
+				"description": "Poder base de oscuridad",
+				"type": "basic",
+				"image": "assets/powers/ball_icon_dark.png"
+			}
+		},
+		"combos": {
+			"vampire+bleed": {
+				"result": "vampire_lord",
+				"type": "combo",
+				"name": "Vampire Lord",
+				"description": "Each hit inflicts 3 stacks of bleed. Heals 1 health and consumes all stacks when hitting an enemy with at least 10 stacks of bleed"
+			},
+			"vampire+dark": {
+				"result": "vampire_lord",
+				"type": "combo",
+				"name": "Vampire Lord",
+				"description": "Each hit inflicts 3 stacks of bleed. Heals 1 health and consumes all stacks when hitting an enemy with at least 10 stacks of bleed"
+			}
+		},
+		"combo_powers": {
+			"vampire_lord": {
+				"name": "Vampire Lord",
+				"description": "Each hit inflicts 3 stacks of bleed. Heals 1 health and consumes all stacks when hitting an enemy with at least 10 stacks of bleed",
+				"image": "assets/powers/ball_icon_vampire lord.png",
+				"components": [
+					["vampire", "bleed"],
+					["vampire", "dark"]
+				],
+				"traits": ["Bleed", "Lifesteal", "DoT"],
+				"alternative_recipes": true
+			}
+		}
+	},
+	"html_structure_analysis": {
+		"recipe_column_structure": {
+			"pattern": "recipe / recipe / recipe...",
+			"recipe_groups": "separated by span containing '/'",
+			"each_recipe": {
+				"structure": "div.flex items-center gap-2",
+				"components": "div.flex-col with img + span",
+				"separator_between_components": "span containing '+'"
+			}
+		},
+		"separator_identification": {
+			"between_recipes": "span.text-zinc-500.text-lg.font-bold.px-2 containing '/'",
+			"between_components": "span.text-zinc-500.text-lg.font-bold containing '+'"
+		}
+	},
+	"implementation_notes": [
+		"MÚLTIPLES RECETAS para el MISMO resultado",
+		"Ambas recetas crean 'Vampire Lord'",
+		"Receta 1: Vampire + Bleed",
+		"Receta 2: Vampire + Dark",
+		"El overlay debe mostrar AMBAS opciones al usuario",
+		"En el tooltip debería decir: 'Puedes crear con Bleed O con Dark'"
+	],
+	"tooltip_recommendation": {
+		"when_hovering_vampire": [
+			"=== Vampire ===",
+			"Combos Posibles:",
+			"• Con Bleed → Vampire Lord",
+			"• Con Dark → Vampire Lord (alternativa)",
+			"",
+			"💡 Dos formas de crear el mismo combo!"
+		]
+	},
+	"configurator_implications": {
+		"handling": "El configurador debe permitir agregar múltiples combos con el mismo resultado",
+		"json_structure": "Crear entradas separadas en 'combos' pero que apunten al mismo 'result'",
+		"components_array": "En combo_powers, guardar array de arrays para indicar múltiples recetas"
+	},
+	"notes": [
+		"Este patrón es común en juegos para dar flexibilidad al jugador",
+		"El usuario puede elegir el camino más fácil según los poderes que encuentre",
+		"Sistema debe detectar automáticamente combos con múltiples recetas",
+		"Importante mostrar TODAS las opciones en tooltips"
+	]
+}

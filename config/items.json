@@ -1,0 +1,437 @@
+{
+  "items": {
+    "Archer's Effigy": {
+      "name": "Archer's Effigy",
+      "description": "Every 7-12 rows, spawn a stone archer with 160 health on your side. Stone archers are immune to ball damage and shoot arrows at enemies, dealing 10-20 each",
+      "image": "item_1.png",
+      "traits": []
+    },
+    "Artificial Heart": {
+      "name": "Artificial Heart",
+      "description": "Friendly pieces gain 100% more health",
+      "image": "item_2.png",
+      "traits": []
+    },
+    "Baby Rattle": {
+      "name": "Baby Rattle",
+      "description": "Gain 1.5x baby balls, but your aim becomes scattered",
+      "image": "item_3.png",
+      "traits": []
+    },
+    "Bandage Roll": {
+      "name": "Bandage Roll",
+      "description": "Shoot 1-2 baby balls each time you're healed",
+      "image": "item_4.png",
+      "traits": []
+    },
+    "Bottled Tornado": {
+      "name": "Bottled Tornado",
+      "description": "When you catch a special ball, automatically shoot 1-3 new baby balls in random directions",
+      "image": "item_5.png",
+      "traits": []
+    },
+    "Breastplate": {
+      "name": "Breastplate",
+      "description": "Decrease damage taken by 10%",
+      "image": "item_6.png",
+      "traits": []
+    },
+    "Crown of Thorns": {
+      "name": "Crown of Thorns",
+      "description": "Destroy the 2 nearest enemies when you are hit from close range",
+      "image": "item_7.png",
+      "traits": []
+    },
+    "Cursed Elixir": {
+      "name": "Cursed Elixir",
+      "description": "When a poisoned enemy dies, 10% chance for them to come back as a zombie with 240 health that moves up the board and fights enemies",
+      "image": "item_8.png",
+      "traits": []
+    },
+    "Deadeye's Amulet": {
+      "name": "Deadeye's Amulet",
+      "description": "Critical hits deal 10-15 bonus damage",
+      "image": "item_9.png",
+      "traits": []
+    },
+    "Diamond Hilted Dagger": {
+      "name": "Diamond Hilted Dagger",
+      "description": "Increase crit chance to 20% when hitting enemies in the front",
+      "image": "item_10.png",
+      "traits": []
+    },
+    "Dynamite": {
+      "name": "Dynamite",
+      "description": "Every 5-10 rows, spawn an enemy with dynamite attached to them. Destroying them will deal 200-500 damage to nearby enemies",
+      "image": "item_11.png",
+      "traits": []
+    },
+    "Emerald Hilted Dagger": {
+      "name": "Emerald Hilted Dagger",
+      "description": "Increase crit chance to 20% when hitting enemies on their right side",
+      "image": "item_12.png",
+      "traits": []
+    },
+    "Ethereal Cloak": {
+      "name": "Ethereal Cloak",
+      "description": "Balls go through enemies and deal 25% bonus damage until they hit the back of the field",
+      "image": "item_14.png",
+      "traits": []
+    },
+    "Everflowing Goblet": {
+      "name": "Everflowing Goblet",
+      "description": "You can heal past max health at 20% efficiency",
+      "image": "item_15.png",
+      "traits": []
+    },
+    "Eye of the Beholder": {
+      "name": "Eye of the Beholder",
+      "description": "10% chance to dodge incoming attacks",
+      "image": "item_16.png",
+      "traits": []
+    },
+    "Fleet Feet": {
+      "name": "Fleet Feet",
+      "description": "Increase movement speed by 10% and move at full speed while shooting",
+      "image": "item_17.png",
+      "traits": []
+    },
+    "Frozen Spike": {
+      "name": "Frozen Spike",
+      "description": "When an enemy is frozen, they emit a chill to nearby enemies that deals 10-20 damage",
+      "image": "item_18.png",
+      "traits": []
+    },
+    "Gemspring": {
+      "name": "Gemspring",
+      "description": "Every 7-11 rows, spawn a Gemspring. Dealing damage to them causes them to drop an increasing amount of XP gems",
+      "image": "item_19.png",
+      "traits": []
+    },
+    "Ghostly Corset": {
+      "name": "Ghostly Corset",
+      "description": "Balls go through enemies and deal 20% bonus damage when hitting them from the side",
+      "image": "item_20.png",
+      "traits": []
+    },
+    "Ghostly Shield": {
+      "name": "Ghostly Shield",
+      "description": "Balls go through allies and heal them for 2 health",
+      "image": "item_21.png",
+      "traits": []
+    },
+    "Golden Bull": {
+      "name": "Golden Bull",
+      "description": "Every 7-11 rows, spawn a golden bull with 400 health on your side. Golden bulls accrue 10 gold per minute. They also move up the field, blocking and attacking enemies in the way",
+      "image": "item_22.png",
+      "traits": []
+    },
+    "Hand Fan": {
+      "name": "Hand Fan",
+      "description": "Slow down enemies in the same column as you by 50%",
+      "image": "item_23.png",
+      "traits": []
+    },
+    "Hand Mirror": {
+      "name": "Hand Mirror",
+      "description": "Projectiles have a 50% chance to reflect upon hitting you, dealing 20-40 damage if they hit an enemy",
+      "image": "item_24.png",
+      "traits": []
+    },
+    "Healer's Effigy": {
+      "name": "Healer's Effigy",
+      "description": "Every 7-12 rows, spawn a stone healer with 100 health on your side, which heals you 10 health per minute while it's on the field. Healers are immune to ball damage and move up the field, blocking and attacking enemies in the way",
+      "image": "item_25.png",
+      "traits": []
+    },
+    "Hourglass": {
+      "name": "Hourglass",
+      "description": "Balls deal 150% damage, but damage decays by 30% each time they bounce (minimum 50%)",
+      "image": "item_27.png",
+      "traits": []
+    },
+    "Kiss of Death": {
+      "name": "Kiss of Death",
+      "description": "Charmed enemies have a 10% chance of dying after recovering",
+      "image": "item_28.png",
+      "traits": []
+    },
+    "Lover's Quiver": {
+      "name": "Lover's Quiver",
+      "description": "Projectiles have a 40% chance to heal you for 1 health instead of hurting you",
+      "image": "item_29.png",
+      "traits": []
+    },
+    "Magic Staff": {
+      "name": "Magic Staff",
+      "description": "Increase area-of-effect damage (such as earthquake, laser, and lightning) by 20%",
+      "image": "item_30.png",
+      "traits": []
+    },
+    "Magnet": {
+      "name": "Magnet",
+      "description": "Increase range at which you pick up items and catch balls by 1.0 tiles",
+      "image": "item_31.png",
+      "traits": []
+    },
+    "Midnight Oil": {
+      "name": "Midnight Oil",
+      "description": "Balls that hit flaming enemies light on fire and deal 10-20 bonus fire damage on the next hit",
+      "image": "item_32.png",
+      "traits": []
+    },
+    "Pressure Valve": {
+      "name": "Pressure Valve",
+      "description": "Enemies explode on death, dealing 20-30 damage to adjacent enemies",
+      "image": "item_33.png",
+      "traits": []
+    },
+    "Protective Charm": {
+      "name": "Protective Charm",
+      "description": "Gain a shield that blocks the next damage you would receive. Recharges after 60 seconds",
+      "image": "item_34.png",
+      "traits": []
+    },
+    "Radiant Feather": {
+      "name": "Radiant Feather",
+      "description": "Increases ball launch speed by 20%, but get knocked back a little each time you shoot a ball",
+      "image": "item_35.png",
+      "traits": []
+    },
+    "Reacher's Spear": {
+      "name": "Reacher's Spear",
+      "description": "Increase crit chance to 20% when hitting enemies in the same column as you",
+      "image": "item_36.png",
+      "traits": []
+    },
+    "Rubber Headband": {
+      "name": "Rubber Headband",
+      "description": "Balls start off at 70% speed but increase by 20% each bounce (max 200%)",
+      "image": "item_37.png",
+      "traits": []
+    },
+    "Ruby Hilted Dagger": {
+      "name": "Ruby Hilted Dagger",
+      "description": "Increase crit chance to 15% when hitting enemies in the back",
+      "image": "item_38.png",
+      "traits": []
+    },
+    "Sapphire Hilted Dagger": {
+      "name": "Sapphire Hilted Dagger",
+      "description": "Increase crit chance to 30% when hitting enemies on their left side",
+      "image": "item_40.png",
+      "traits": []
+    },
+    "Shortbow": {
+      "name": "Shortbow",
+      "description": "Increase fire rate by 15%",
+      "image": "item_41.png",
+      "traits": []
+    },
+    "Silver Blindfold": {
+      "name": "Silver Blindfold",
+      "description": "Increase crit chance to 20% when hitting blinded enemies",
+      "image": "item_42.png",
+      "traits": []
+    },
+    "Silver Bullet": {
+      "name": "Silver Bullet",
+      "description": "Balls deal 20% bonus damage until they hit a wall",
+      "image": "item_43.png",
+      "traits": []
+    },
+    "Slingshot": {
+      "name": "Slingshot",
+      "description": "25% chance to launch a baby ball when you pick up a gem",
+      "image": "item_44.png",
+      "traits": []
+    },
+    "Spiked Collar": {
+      "name": "Spiked Collar",
+      "description": "Deal 30-50 to enemies the first time you get into their melee attack range",
+      "image": "item_45.png",
+      "traits": []
+    },
+    "Stone Effigy": {
+      "name": "Stone Effigy",
+      "description": "Every 7-12 rows, spawn a stone soldier with 200 health on your side. Stone soldiers are immune to ball damage and move up the field, blocking and attacking enemies in the way",
+      "image": "item_46.png",
+      "traits": []
+    },
+    "Traitor's Cowl": {
+      "name": "Traitor's Cowl",
+      "description": "Stone allies can now be damaged by your balls, but you heal 2 health when a ball hits one",
+      "image": "item_47.png",
+      "traits": []
+    },
+    "Turret": {
+      "name": "Turret",
+      "description": "Floats around your character and shoots a baby ball at enemies every 2.0 seconds",
+      "image": "item_48.png",
+      "traits": []
+    },
+    "Upturned Hatchet": {
+      "name": "Upturned Hatchet",
+      "description": "Balls deal 80% more damage after hitting the back of the field, otherwise damage is reduced by 20%",
+      "image": "item_49.png",
+      "traits": []
+    },
+    "Vampiric Sword": {
+      "name": "Vampiric Sword",
+      "description": "Each kill heals you by 5, but each shot you take deals 2 damage to you",
+      "image": "item_50.png",
+      "traits": []
+    },
+    "Voodoo Doll": {
+      "name": "Voodoo Doll",
+      "description": "Curse has a 10% chance of killing enemies",
+      "image": "item_51.png",
+      "traits": []
+    },
+    "Wagon Wheel": {
+      "name": "Wagon Wheel",
+      "description": "Each time a ball hits a wall, it deals 30% extra damage on the next hit",
+      "image": "item_53.png",
+      "traits": []
+    },
+    "War Horn": {
+      "name": "War Horn",
+      "description": "All baby balls deal 20% more damage",
+      "image": "item_54.png",
+      "traits": []
+    },
+    "Wretched Onion": {
+      "name": "Wretched Onion",
+      "description": "Deal 6-12 per second to enemies within 2 tiles",
+      "image": "item_55.png",
+      "traits": []
+    }
+  },
+  "combos": {
+    "Baby Rattle+War Horn": {
+      "result": "Cornucopia",
+      "type": "COMBO"
+    },
+    "Diamond Hilted Dagger+Emerald Hilted Dagger+Ruby Hilted Dagger+Sapphire Hilted Dagger": {
+      "result": "Deadeye's Cross",
+      "type": "COMBO"
+    },
+    "Deadeye's Amulet+Reacher's Spear": {
+      "result": "Gracious Impaler",
+      "type": "COMBO"
+    },
+    "Breastplate+Wretched Onion": {
+      "result": "Odiferous Shell",
+      "type": "COMBO"
+    },
+    "Ethereal Cloak+Ghostly Corset": {
+      "result": "Phantom Regalia",
+      "type": "COMBO"
+    },
+    "Everflowing Goblet+Vampiric Sword": {
+      "result": "Soul Reaver",
+      "type": "COMBO"
+    },
+    "Crown of Thorns+Spiked Collar": {
+      "result": "Tormentor's Mask",
+      "type": "COMBO"
+    },
+    "Fleet Feet+Radiant Feather": {
+      "result": "Wings of the Anointed",
+      "type": "COMBO"
+    }
+  },
+  "combo_items": {
+    "Cornucopia": {
+      "name": "Cornucopia",
+      "description": "Has the chance to create an additional baby ball each time one spawns",
+      "image": "item_56.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "Baby Rattle",
+        "War Horn"
+      ]
+    },
+    "Deadeye's Cross": {
+      "name": "Deadeye's Cross",
+      "description": "Creates a new weapon with greater accuracy and improved critical damage",
+      "image": "item_57.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "Diamond Hilted Dagger",
+        "Emerald Hilted Dagger",
+        "Ruby Hilted Dagger",
+        "Sapphire Hilted Dagger"
+      ]
+    },
+    "Gracious Impaler": {
+      "name": "Gracious Impaler",
+      "description": "5% chance to insta-kill an enemy with each critical hit",
+      "image": "item_58.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "Deadeye's Amulet",
+        "Reacher's Spear"
+      ]
+    },
+    "Odiferous Shell": {
+      "name": "Odiferous Shell",
+      "description": "Improved armor, debuff resistance, and defense",
+      "image": "item_59.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "Breastplate",
+        "Wretched Onion"
+      ]
+    },
+    "Phantom Regalia": {
+      "name": "Phantom Regalia",
+      "description": "Balls phase through enemies, dealing 50% more damage",
+      "image": "item_60.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "Ethereal Cloak",
+        "Ghostly Corset"
+      ]
+    },
+    "Soul Reaver": {
+      "name": "Soul Reaver",
+      "description": "Each kill grants 1 HP and you can overheal by 30%",
+      "image": "item_61.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "Everflowing Goblet",
+        "Vampiric Sword"
+      ]
+    },
+    "Tormentor's Mask": {
+      "name": "Tormentor's Mask",
+      "description": "Reflects damage back onto enemies",
+      "image": "item_62.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "Crown of Thorns",
+        "Spiked Collar"
+      ]
+    },
+    "Wings of the Anointed": {
+      "name": "Wings of the Anointed",
+      "description": "Movement and ball speed buffed by 20% and 40% respectively. Also grants immunity to environmental hazards",
+      "image": "item_63.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "Fleet Feet",
+        "Radiant Feather"
+      ]
+    }
+  },
+  "recommendations": {}
+}

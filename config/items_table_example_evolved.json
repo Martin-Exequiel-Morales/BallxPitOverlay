@@ -1,0 +1,172 @@
+{
+	"description": "Ejemplo de COMBO DE ITEM (item evolucionado)",
+	"html_row": "<tr class=\"border-b border-zinc-800 hover:bg-zinc-800/30 transition-colors  cursor-pointer \"><td class=\"px-6 py-4\"><div class=\"relative inline-block \"><div class=\"w-12 h-12 relative cursor-help\"><img alt=\"Cornucopia\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-contain\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_cornucopia.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_cornucopia.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_cornucopia.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_cornucopia.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_cornucopia.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_cornucopia.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_cornucopia.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_cornucopia.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_cornucopia.png&amp;w=3840&amp;q=75\"></div></div></td><td class=\"px-6 py-4 text-white font-medium\">Cornucopia</td><td class=\"px-6 py-4 text-zinc-300\">Has the chance to create an additional baby ball each time one spawns</td><td class=\"px-6 py-4\"><div class=\"flex flex-wrap gap-1\"><span class=\"px-2 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 text-xs font-semibold rounded\">Summon</span><span class=\"px-2 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 text-xs font-semibold rounded\">Damage</span></div></td><td class=\"px-6 py-4\"><div class=\"flex flex-col items-start gap-2\"><span class=\"px-3 py-1 bg-purple-900/30 border border-purple-500/50 text-purple-400 text-xs font-semibold rounded-full\">Evolved</span><div class=\"flex flex-wrap gap-2\"><div class=\"flex items-center gap-2\"><div class=\"flex items-center gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"w-10 h-10 relative\"><img alt=\"Baby Rattle\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-contain\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_baby%20rattle.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_baby%20rattle.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_baby%20rattle.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_baby%20rattle.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_baby%20rattle.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_baby%20rattle.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_baby%20rattle.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_baby%20rattle.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_baby%20rattle.png&amp;w=3840&amp;q=75\"></div><span class=\"text-xs text-zinc-400 text-center max-w-[80px]\">Baby Rattle</span></div></div><div class=\"flex items-center gap-2\"><span class=\"text-zinc-500 text-lg font-bold\">+</span><div class=\"flex flex-col items-center gap-1\"><div class=\"w-10 h-10 relative\"><img alt=\"War Horn\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-contain\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_war%20horn.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_war%20horn.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_war%20horn.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_war%20horn.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_war%20horn.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_war%20horn.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_war%20horn.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_war%20horn.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_war%20horn.png&amp;w=3840&amp;q=75\"></div><span class=\"text-xs text-zinc-400 text-center max-w-[80px]\">War Horn</span></div></div></div></div></div></td></tr>",
+
+	"parsed_data": {
+		"icon": {
+			"alt": "Cornucopia",
+			"src": "/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_cornucopia.png&w=3840&q=75",
+			"original_path": "/images/items/passive_icon_cornucopia.png"
+		},
+		"name": "Cornucopia",
+		"description": "Has the chance to create an additional baby ball each time one spawns",
+		"traits": ["Summon", "Damage"],
+		"type": "Evolved",
+		"is_combo": true,
+		"recipe": {
+			"component_count": 2,
+			"components": [
+				{
+					"name": "Baby Rattle",
+					"image": "/images/items/passive_icon_baby rattle.png",
+					"item_id": "baby_rattle"
+				},
+				{
+					"name": "War Horn",
+					"image": "/images/items/passive_icon_war horn.png",
+					"item_id": "war_horn"
+				}
+			],
+			"formula": "Baby Rattle + War Horn"
+		}
+	},
+
+	"html_structure_analysis": {
+		"columns": [
+			{
+				"index": 0,
+				"type": "icon",
+				"content": "Cornucopia icon"
+			},
+			{
+				"index": 1,
+				"type": "name",
+				"content": "Cornucopia"
+			},
+			{
+				"index": 2,
+				"type": "description",
+				"content": "Has the chance to create an additional baby ball each time one spawns"
+			},
+			{
+				"index": 3,
+				"type": "traits",
+				"content": ["Summon", "Damage"]
+			},
+			{
+				"index": 4,
+				"type": "type_with_recipe",
+				"structure": {
+					"type_badge": "Evolved (purple badge)",
+					"recipe_display": {
+						"layout": "flex flex-col items-start gap-2",
+						"components": [
+							{
+								"image": "Baby Rattle icon (10x10)",
+								"label": "Baby Rattle"
+							},
+							{
+								"separator": "+ (text-zinc-500)",
+								"image": "War Horn icon (10x10)",
+								"label": "War Horn"
+							}
+						]
+					}
+				}
+			}
+		]
+	},
+
+	"type_column_structure": {
+		"container": "flex flex-col items-start gap-2",
+		"type_badge": {
+			"text": "Evolved",
+			"classes": "px-3 py-1 bg-purple-900/30 border border-purple-500/50 text-purple-400 text-xs font-semibold rounded-full",
+			"note": "Purple color scheme for evolved items (vs blue for basic)"
+		},
+		"recipe_container": "flex flex-wrap gap-2",
+		"component_structure": {
+			"wrapper": "flex items-center gap-2",
+			"component": {
+				"layout": "flex flex-col items-center gap-1",
+				"image": "w-10 h-10 relative (smaller than main icon)",
+				"label": "text-xs text-zinc-400 text-center max-w-[80px]"
+			},
+			"separator": {
+				"text": "+",
+				"classes": "text-zinc-500 text-lg font-bold"
+			}
+		}
+	},
+
+	"mapping_to_items_json": {
+		"combo_entry": {
+			"key": "baby_rattle+war_horn",
+			"value": {
+				"result": "cornucopia",
+				"type": "item_combo",
+				"name": "Cornucopia",
+				"description": "Baby Rattle + War Horn evolution"
+			}
+		},
+		"combo_item_entry": {
+			"key": "cornucopia",
+			"value": {
+				"name": "Cornucopia",
+				"description": "Has the chance to create an additional baby ball each time one spawns",
+				"type": "Evolved",
+				"traits": ["Summon", "Damage"],
+				"image": "assets/items/cornucopia.png",
+				"components": ["baby_rattle", "war_horn"]
+			}
+		},
+		"base_items_entries": {
+			"baby_rattle": {
+				"name": "Baby Rattle",
+				"description": "...",
+				"type": "Basic",
+				"image": "assets/items/baby_rattle.png"
+			},
+			"war_horn": {
+				"name": "War Horn",
+				"description": "...",
+				"type": "Basic",
+				"image": "assets/items/war_horn.png"
+			}
+		}
+	},
+
+	"scraping_logic": {
+		"detection": "Type badge contains 'Evolved' → item is a combo",
+		"component_extraction": {
+			"step_1": "Find all img tags with alt attributes in Type column",
+			"step_2": "Find all text-zinc-400 spans for component names",
+			"step_3": "Match components by order (paired with '+' separators)",
+			"step_4": "Count '+' symbols to determine number of components (1 = 2 items, 2 = 3 items)"
+		},
+		"storage": {
+			"combo": "Add to items.json → combos section",
+			"combo_item": "Add to items.json → combo_items section",
+			"base_items": "Ensure base items exist in items.json → items section"
+		}
+	},
+
+	"comparison_with_powers": {
+		"similarity": "Both use visual recipe display in last column",
+		"difference_1": "Powers use text formula (Poison + Earthquake), Items use images + labels",
+		"difference_2": "Powers have '-' for basic, Items show full recipe with images",
+		"difference_3": "Items type badge is 'Evolved' (purple) vs powers which don't have type badge",
+		"badge_colors": {
+			"basic_item": "blue (bg-blue-900/30 border-blue-500/50 text-blue-400)",
+			"evolved_item": "purple (bg-purple-900/30 border-purple-500/50 text-purple-400)"
+		}
+	},
+
+	"implementation_notes": {
+		"recipe_parsing": "Must extract both img alt attributes AND span text for component names",
+		"component_count": "Count '+' separators: 1 plus = 2 components, 2 plus = 3 components",
+		"image_extraction": "Components use w-10 h-10 images (smaller than main 12x12 icon)",
+		"combo_detection": "Check if Type column contains 'Evolved' badge",
+		"fallback": "If recipe extraction fails, mark as combo but components unknown"
+	}
+}

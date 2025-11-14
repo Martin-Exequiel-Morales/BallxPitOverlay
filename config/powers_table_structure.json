@@ -1,0 +1,70 @@
+{
+	"table_structure": {
+		"description": "Estructura de tabla HTML para datos del juego",
+		"source": "Table head extraído de página web",
+		"columns": [
+			{
+				"id": "icon",
+				"label": "Icon",
+				"type": "image",
+				"description": "Icono o imagen visual del elemento"
+			},
+			{
+				"id": "id",
+				"label": "ID",
+				"type": "string",
+				"description": "Identificador único del elemento"
+			},
+			{
+				"id": "name",
+				"label": "Name",
+				"type": "string",
+				"description": "Nombre del elemento"
+			},
+			{
+				"id": "description",
+				"label": "Description",
+				"type": "text",
+				"description": "Descripción detallada del elemento"
+			},
+			{
+				"id": "traits",
+				"label": "Traits",
+				"type": "array",
+				"description": "Características o rasgos del elemento"
+			},
+			{
+				"id": "evolution_recipe",
+				"label": "Evolution Recipe",
+				"type": "recipe",
+				"description": "Receta o combinación para evolucionar/combinar este elemento"
+			}
+		],
+		"mapping_to_powers": {
+			"icon": "image",
+			"id": "id (usar como key)",
+			"name": "name",
+			"description": "description",
+			"traits": "podría mapearse a 'type' o atributos adicionales",
+			"evolution_recipe": "usar para generar 'combos' y 'combo_powers'"
+		},
+		"mapping_to_items": {
+			"icon": "image",
+			"id": "id (usar como key)",
+			"name": "name",
+			"description": "description",
+			"traits": "podría mapearse a 'type' (weapon, armor, etc.)",
+			"evolution_recipe": "usar para 'recommendations'"
+		},
+		"html_classes": {
+			"header_row": "bg-zinc-800/50 border-b border-zinc-700",
+			"header_cell": "px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-left"
+		},
+		"notes": [
+			"La columna 'Evolution Recipe' indica que existe un sistema de evolución/combinación",
+			"Esto se mapea perfectamente al sistema de combos del overlay",
+			"Los 'Traits' pueden ser atributos adicionales o categorías",
+			"El formato sugiere que es una wiki o base de datos de juego"
+		]
+	}
+}

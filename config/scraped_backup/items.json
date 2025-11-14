@@ -1,0 +1,500 @@
+[
+  {
+    "name": "Archer's Effigy",
+    "description": "Every 7-12 rows, spawn a stone archer with 160 health on your side. Stone archers are immune to ball damage and shoot arrows at enemies, dealing 10-20 each",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_1.png"
+  },
+  {
+    "name": "Artificial Heart",
+    "description": "Friendly pieces gain 100% more health",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_2.png"
+  },
+  {
+    "name": "Baby Rattle",
+    "description": "Gain 1.5x baby balls, but your aim becomes scattered",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_3.png"
+  },
+  {
+    "name": "Bandage Roll",
+    "description": "Shoot 1-2 baby balls each time you're healed",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_4.png"
+  },
+  {
+    "name": "Bottled Tornado",
+    "description": "When you catch a special ball, automatically shoot 1-3 new baby balls in random directions",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_5.png"
+  },
+  {
+    "name": "Breastplate",
+    "description": "Decrease damage taken by 10%",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_6.png"
+  },
+  {
+    "name": "Crown of Thorns",
+    "description": "Destroy the 2 nearest enemies when you are hit from close range",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_7.png"
+  },
+  {
+    "name": "Cursed Elixir",
+    "description": "When a poisoned enemy dies, 10% chance for them to come back as a zombie with 240 health that moves up the board and fights enemies",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_8.png"
+  },
+  {
+    "name": "Deadeye's Amulet",
+    "description": "Critical hits deal 10-15 bonus damage",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_9.png"
+  },
+  {
+    "name": "Diamond Hilted Dagger",
+    "description": "Increase crit chance to 20% when hitting enemies in the front",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_10.png"
+  },
+  {
+    "name": "Dynamite",
+    "description": "Every 5-10 rows, spawn an enemy with dynamite attached to them. Destroying them will deal 200-500 damage to nearby enemies",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_11.png"
+  },
+  {
+    "name": "Emerald Hilted Dagger",
+    "description": "Increase crit chance to 20% when hitting enemies on their right side",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_12.png"
+  },
+  {
+    "name": "Ethereal Cloak",
+    "description": "Balls go through enemies and deal 25% bonus damage until they hit the back of the field",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_14.png"
+  },
+  {
+    "name": "Everflowing Goblet",
+    "description": "You can heal past max health at 20% efficiency",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_15.png"
+  },
+  {
+    "name": "Eye of the Beholder",
+    "description": "10% chance to dodge incoming attacks",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_16.png"
+  },
+  {
+    "name": "Fleet Feet",
+    "description": "Increase movement speed by 10% and move at full speed while shooting",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_17.png"
+  },
+  {
+    "name": "Frozen Spike",
+    "description": "When an enemy is frozen, they emit a chill to nearby enemies that deals 10-20 damage",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_18.png"
+  },
+  {
+    "name": "Gemspring",
+    "description": "Every 7-11 rows, spawn a Gemspring. Dealing damage to them causes them to drop an increasing amount of XP gems",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_19.png"
+  },
+  {
+    "name": "Ghostly Corset",
+    "description": "Balls go through enemies and deal 20% bonus damage when hitting them from the side",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_20.png"
+  },
+  {
+    "name": "Ghostly Shield",
+    "description": "Balls go through allies and heal them for 2 health",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_21.png"
+  },
+  {
+    "name": "Golden Bull",
+    "description": "Every 7-11 rows, spawn a golden bull with 400 health on your side. Golden bulls accrue 10 gold per minute. They also move up the field, blocking and attacking enemies in the way",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_22.png"
+  },
+  {
+    "name": "Hand Fan",
+    "description": "Slow down enemies in the same column as you by 50%",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_23.png"
+  },
+  {
+    "name": "Hand Mirror",
+    "description": "Projectiles have a 50% chance to reflect upon hitting you, dealing 20-40 damage if they hit an enemy",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_24.png"
+  },
+  {
+    "name": "Healer's Effigy",
+    "description": "Every 7-12 rows, spawn a stone healer with 100 health on your side, which heals you 10 health per minute while it's on the field. Healers are immune to ball damage and move up the field, blocking and attacking enemies in the way",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_25.png"
+  },
+  {
+    "name": "Hourglass",
+    "description": "Balls deal 150% damage, but damage decays by 30% each time they bounce (minimum 50%)",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_27.png"
+  },
+  {
+    "name": "Kiss of Death",
+    "description": "Charmed enemies have a 10% chance of dying after recovering",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_28.png"
+  },
+  {
+    "name": "Lover's Quiver",
+    "description": "Projectiles have a 40% chance to heal you for 1 health instead of hurting you",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_29.png"
+  },
+  {
+    "name": "Magic Staff",
+    "description": "Increase area-of-effect damage (such as earthquake, laser, and lightning) by 20%",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_30.png"
+  },
+  {
+    "name": "Magnet",
+    "description": "Increase range at which you pick up items and catch balls by 1.0 tiles",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_31.png"
+  },
+  {
+    "name": "Midnight Oil",
+    "description": "Balls that hit flaming enemies light on fire and deal 10-20 bonus fire damage on the next hit",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_32.png"
+  },
+  {
+    "name": "Pressure Valve",
+    "description": "Enemies explode on death, dealing 20-30 damage to adjacent enemies",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_33.png"
+  },
+  {
+    "name": "Protective Charm",
+    "description": "Gain a shield that blocks the next damage you would receive. Recharges after 60 seconds",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_34.png"
+  },
+  {
+    "name": "Radiant Feather",
+    "description": "Increases ball launch speed by 20%, but get knocked back a little each time you shoot a ball",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_35.png"
+  },
+  {
+    "name": "Reacher's Spear",
+    "description": "Increase crit chance to 20% when hitting enemies in the same column as you",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_36.png"
+  },
+  {
+    "name": "Rubber Headband",
+    "description": "Balls start off at 70% speed but increase by 20% each bounce (max 200%)",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_37.png"
+  },
+  {
+    "name": "Ruby Hilted Dagger",
+    "description": "Increase crit chance to 15% when hitting enemies in the back",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_38.png"
+  },
+  {
+    "name": "Sapphire Hilted Dagger",
+    "description": "Increase crit chance to 30% when hitting enemies on their left side",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_40.png"
+  },
+  {
+    "name": "Shortbow",
+    "description": "Increase fire rate by 15%",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_41.png"
+  },
+  {
+    "name": "Silver Blindfold",
+    "description": "Increase crit chance to 20% when hitting blinded enemies",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_42.png"
+  },
+  {
+    "name": "Silver Bullet",
+    "description": "Balls deal 20% bonus damage until they hit a wall",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_43.png"
+  },
+  {
+    "name": "Slingshot",
+    "description": "25% chance to launch a baby ball when you pick up a gem",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_44.png"
+  },
+  {
+    "name": "Spiked Collar",
+    "description": "Deal 30-50 to enemies the first time you get into their melee attack range",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_45.png"
+  },
+  {
+    "name": "Stone Effigy",
+    "description": "Every 7-12 rows, spawn a stone soldier with 200 health on your side. Stone soldiers are immune to ball damage and move up the field, blocking and attacking enemies in the way",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_46.png"
+  },
+  {
+    "name": "Traitor's Cowl",
+    "description": "Stone allies can now be damaged by your balls, but you heal 2 health when a ball hits one",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_47.png"
+  },
+  {
+    "name": "Turret",
+    "description": "Floats around your character and shoots a baby ball at enemies every 2.0 seconds",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_48.png"
+  },
+  {
+    "name": "Upturned Hatchet",
+    "description": "Balls deal 80% more damage after hitting the back of the field, otherwise damage is reduced by 20%",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_49.png"
+  },
+  {
+    "name": "Vampiric Sword",
+    "description": "Each kill heals you by 5, but each shot you take deals 2 damage to you",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_50.png"
+  },
+  {
+    "name": "Voodoo Doll",
+    "description": "Curse has a 10% chance of killing enemies",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_51.png"
+  },
+  {
+    "name": "Wagon Wheel",
+    "description": "Each time a ball hits a wall, it deals 30% extra damage on the next hit",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_53.png"
+  },
+  {
+    "name": "War Horn",
+    "description": "All baby balls deal 20% more damage",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_54.png"
+  },
+  {
+    "name": "Wretched Onion",
+    "description": "Deal 6-12 per second to enemies within 2 tiles",
+    "traits": [],
+    "type": "Basic",
+    "recipe": null,
+    "icon": "item_55.png"
+  },
+  {
+    "name": "Cornucopia",
+    "description": "Has the chance to create an additional baby ball each time one spawns",
+    "traits": [],
+    "type": "Basic",
+    "recipe": [
+      "Baby Rattle",
+      "War Horn"
+    ],
+    "icon": "item_56.png"
+  },
+  {
+    "name": "Deadeye's Cross",
+    "description": "Creates a new weapon with greater accuracy and improved critical damage",
+    "traits": [],
+    "type": "Basic",
+    "recipe": [
+      "Diamond Hilted Dagger",
+      "Emerald Hilted Dagger",
+      "Ruby Hilted Dagger",
+      "Sapphire Hilted Dagger"
+    ],
+    "icon": "item_57.png"
+  },
+  {
+    "name": "Gracious Impaler",
+    "description": "5% chance to insta-kill an enemy with each critical hit",
+    "traits": [],
+    "type": "Basic",
+    "recipe": [
+      "Deadeye's Amulet",
+      "Reacher's Spear"
+    ],
+    "icon": "item_58.png"
+  },
+  {
+    "name": "Odiferous Shell",
+    "description": "Improved armor, debuff resistance, and defense",
+    "traits": [],
+    "type": "Basic",
+    "recipe": [
+      "Breastplate",
+      "Wretched Onion"
+    ],
+    "icon": "item_59.png"
+  },
+  {
+    "name": "Phantom Regalia",
+    "description": "Balls phase through enemies, dealing 50% more damage",
+    "traits": [],
+    "type": "Basic",
+    "recipe": [
+      "Ethereal Cloak",
+      "Ghostly Corset"
+    ],
+    "icon": "item_60.png"
+  },
+  {
+    "name": "Soul Reaver",
+    "description": "Each kill grants 1 HP and you can overheal by 30%",
+    "traits": [],
+    "type": "Basic",
+    "recipe": [
+      "Everflowing Goblet",
+      "Vampiric Sword"
+    ],
+    "icon": "item_61.png"
+  },
+  {
+    "name": "Tormentor's Mask",
+    "description": "Reflects damage back onto enemies",
+    "traits": [],
+    "type": "Basic",
+    "recipe": [
+      "Crown of Thorns",
+      "Spiked Collar"
+    ],
+    "icon": "item_62.png"
+  },
+  {
+    "name": "Wings of the Anointed",
+    "description": "Movement and ball speed buffed by 20% and 40% respectively. Also grants immunity to environmental hazards",
+    "traits": [],
+    "type": "Basic",
+    "recipe": [
+      "Fleet Feet",
+      "Radiant Feather"
+    ],
+    "icon": "item_63.png"
+  }
+]

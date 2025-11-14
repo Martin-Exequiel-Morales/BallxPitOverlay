@@ -1,0 +1,657 @@
+{
+  "powers": {
+    "1": {
+      "name": "Bleed",
+      "description": "Inflicts 2 stacks of bleed. Bleeding enemies receive 1 damage per stack when hit by a ball (max 8 stacks)",
+      "image": "power_1.png",
+      "traits": []
+    },
+    "2": {
+      "name": "Brood Mother",
+      "description": "Has a 25% chance of birthing a baby ball each time it hits an enemy",
+      "image": "power_2.png",
+      "traits": []
+    },
+    "3": {
+      "name": "Burn",
+      "description": "Add 1 stack of burn on hit for 3 seconds (max 3 stacks). Burnt units are dealt 4-8 damage per stack per second",
+      "image": "power_3.png",
+      "traits": []
+    },
+    "4": {
+      "name": "Cell",
+      "description": "Splits into a clone on hit 2 times",
+      "image": "power_4.png",
+      "traits": []
+    },
+    "5": {
+      "name": "Charm",
+      "description": "Each hit has a 4% chance of charming the enemy for 5 seconds. Charmed units walk up the board and attack enemies",
+      "image": "power_5.png",
+      "traits": []
+    },
+    "6": {
+      "name": "Dark",
+      "description": "Deals 3.0x damage but destroys itself after hitting an enemy. Has a 3 second cooldown before it can be shot again",
+      "image": "power_6.png",
+      "traits": []
+    },
+    "7": {
+      "name": "Earthquake",
+      "description": "Deals 5-13 damage to nearby units in a 3x3 tile square",
+      "image": "power_7.png",
+      "traits": []
+    },
+    "8": {
+      "name": "Egg Sac",
+      "description": "Explodes into 2-4 baby balls on hitting an enemy. Has a 3 second cooldown before it can be shot again",
+      "image": "power_8.png",
+      "traits": []
+    },
+    "9": {
+      "name": "Freeze",
+      "description": "Has a 4% chance to freeze enemies for 5.0 seconds. Frozen enemies receive 25% more damage",
+      "image": "power_9.png",
+      "traits": []
+    },
+    "10": {
+      "name": "Ghost",
+      "description": "Passes through enemies",
+      "image": "power_10.png",
+      "traits": []
+    },
+    "11": {
+      "name": "Iron",
+      "description": "Deals double damage but moves 40% slower",
+      "image": "power_11.png",
+      "traits": []
+    },
+    "12": {
+      "name": "Laser (Horizontal)",
+      "description": "Deals 9-18 damage to all enemies in the same row",
+      "image": "power_12.png",
+      "traits": []
+    },
+    "13": {
+      "name": "Laser (Vertical)",
+      "description": "Deals 9-18 damage to all enemies in the same column",
+      "image": "power_13.png",
+      "traits": []
+    },
+    "14": {
+      "name": "Light",
+      "description": "Blinds enemies on hit for 3 seconds. Blinded units have a hard time detecting you and have a 50% chance of missing when they attack",
+      "image": "power_14.png",
+      "traits": []
+    },
+    "15": {
+      "name": "Lightning",
+      "description": "Deals 1-20 damage to up to 3 nearby enemies",
+      "image": "power_15.png",
+      "traits": []
+    },
+    "16": {
+      "name": "Poison",
+      "description": "Applies 1 stack of poison on hit (max 5 stacks). Poison lasts for 6 seconds and each stack deals 1-4 damage per second",
+      "image": "power_17.png",
+      "traits": []
+    },
+    "17": {
+      "name": "Vampire",
+      "description": "Each hit has a 4.5% chance of healing 1 health",
+      "image": "power_18.png",
+      "traits": []
+    },
+    "18": {
+      "name": "Wind",
+      "description": "Passes through enemies and slows them down by 30% for 5 seconds, but deals 25% less damage",
+      "image": "power_19.png",
+      "traits": []
+    },
+    "19": {
+      "name": "Assassin",
+      "description": "Passes through the front of enemies, but not the back. Backstabs deal 30% bonus damage",
+      "image": "power_20.png",
+      "traits": []
+    },
+    "20": {
+      "name": "Berserk",
+      "description": "Each hit has a 30% chance of causing enemies to go berserk for 6 seconds. Berserk enemies deal 15-24 damage to adjacent enemies every second",
+      "image": "power_21.png",
+      "traits": []
+    },
+    "22": {
+      "name": "Blizzard",
+      "description": "Freezes all enemies within a 2 tile radius for 0.8 seconds, dealing 1-50 damage",
+      "image": "power_23.png",
+      "traits": []
+    },
+    "26": {
+      "name": "Freeze Ray",
+      "description": "Emits a freeze ray when hitting an enemy, dealing 20-50 to all enemies in its path, with a 10% chance of freezing them for 10.0 seconds",
+      "image": "power_27.png",
+      "traits": []
+    },
+    "33": {
+      "name": "Laser Beam",
+      "description": "Emit a laser beam on hit that deals 30-42 damage and blinds enemies for 8 seconds",
+      "image": "power_35.png",
+      "traits": []
+    },
+    "36": {
+      "name": "Lovestruck",
+      "description": "Inflicts lovestruck on hit enemies for 20 seconds. Lovestruck units have a 50% chance of healing you for 5 health when they attack",
+      "image": "power_38.png",
+      "traits": []
+    },
+    "42": {
+      "name": "Noxious",
+      "description": "Passes through enemies and applies 3 stacks of poison to nearby enemies within a 2 tile radius. Poison lasts for 4 seconds and each stack deals 1-3 damage per second",
+      "image": "power_44.png",
+      "traits": []
+    },
+    "46": {
+      "name": "Radiation Beam",
+      "description": "Emit a radiation beam on hit that deals 24-48 damage and applies 1 stack of radiation (max 5 stacks). Radiation lasts for 15 seconds and cause enemies to receive 10% more damage from all sources per stack",
+      "image": "power_49.png",
+      "traits": []
+    },
+    "57": {
+      "name": "Vampire Lord",
+      "description": "Each hit inflicts 3 stacks of bleed. Heals 1 health and consumes all stacks when hitting an enemy with at least 10 stacks of bleed",
+      "image": "power_60.png",
+      "traits": []
+    },
+    "58": {
+      "name": "Virus",
+      "description": "Applies 1 stack of disease to units it hits (max 8 stacks). Disease lasts for 6 seconds. Each stack of disease deals 3-6 damage per second and diseased units have a 15% chance of passing a stack to undiseased nearby enemies each second",
+      "image": "power_61.png",
+      "traits": []
+    }
+  },
+  "combos": {
+    "6+55": {
+      "result": "21",
+      "type": "COMBO"
+    },
+    "3+11": {
+      "result": "23",
+      "type": "COMBO"
+    },
+    "15+14": {
+      "result": "24",
+      "type": "COMBO"
+    },
+    "14+6": {
+      "result": "25",
+      "type": "COMBO"
+    },
+    "3+9": {
+      "result": "27",
+      "type": "COMBO"
+    },
+    "9+7": {
+      "result": "28",
+      "type": "COMBO"
+    },
+    "1+11": {
+      "result": "29",
+      "type": "COMBO"
+    },
+    "12+13": {
+      "result": "30",
+      "type": "COMBO"
+    },
+    "5+6": {
+      "result": "31",
+      "type": "COMBO"
+    },
+    "3+18": {
+      "result": "32",
+      "type": "COMBO"
+    },
+    "2+1": {
+      "result": "34",
+      "type": "COMBO"
+    },
+    "15+11": {
+      "result": "35",
+      "type": "COMBO"
+    },
+    "4+2": {
+      "result": "37",
+      "type": "COMBO"
+    },
+    "3+7": {
+      "result": "38",
+      "type": "COMBO"
+    },
+    "17+2": {
+      "result": "39",
+      "type": "COMBO"
+    },
+    "17+8": {
+      "result": "40",
+      "type": "COMBO"
+    },
+    "57+52+39": {
+      "result": "41",
+      "type": "TRIPLE"
+    },
+    "23+16": {
+      "result": "43",
+      "type": "COMBO"
+    },
+    "7+4": {
+      "result": "44",
+      "type": "COMBO"
+    },
+    "6+10": {
+      "result": "45",
+      "type": "COMBO"
+    },
+    "1+6": {
+      "result": "47",
+      "type": "COMBO"
+    },
+    "7+18": {
+      "result": "48",
+      "type": "COMBO"
+    },
+    "31+54": {
+      "result": "49",
+      "type": "COMBO"
+    },
+    "11+8": {
+      "result": "50",
+      "type": "COMBO"
+    },
+    "17+10": {
+      "result": "51",
+      "type": "COMBO"
+    },
+    "2+8": {
+      "result": "52",
+      "type": "COMBO"
+    },
+    "15+18": {
+      "result": "53",
+      "type": "COMBO"
+    },
+    "5+17": {
+      "result": "54",
+      "type": "COMBO"
+    },
+    "3+14": {
+      "result": "55",
+      "type": "COMBO"
+    },
+    "16+7": {
+      "result": "56",
+      "type": "COMBO"
+    },
+    "8+4": {
+      "result": "59",
+      "type": "COMBO"
+    },
+    "9+10": {
+      "result": "60",
+      "type": "COMBO"
+    }
+  },
+  "combo_powers": {
+    "21": {
+      "name": "Black Hole",
+      "description": "Instantly kills the first non-boss enemy that it hits, but destroys itself afterwards. Has a 7-second cooldown before it can be shot again",
+      "image": "power_22.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "6",
+        "55"
+      ]
+    },
+    "23": {
+      "name": "Bomb",
+      "description": "Explodes when hitting an enemy, dealing 150-300 damage to nearby enemies. Has a 3-second cooldown before it can be shot again",
+      "image": "power_24.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "3",
+        "11"
+      ]
+    },
+    "24": {
+      "name": "Flash",
+      "description": "Damage all enemies on screen for 1-3 damage after hitting an enemy and blind them for 2 seconds",
+      "image": "power_25.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "15",
+        "14"
+      ]
+    },
+    "25": {
+      "name": "Flicker",
+      "description": "Deals 1-7 damage to every enemy on screen every 1.4 seconds",
+      "image": "power_26.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "14",
+        "6"
+      ]
+    },
+    "27": {
+      "name": "Frozen Flame",
+      "description": "Add 1 stack of frostburn on hit for 20 seconds (max 4 stacks). Frostburnt units are dealt 8-12 damage per stack per second and receive 25% more damage from other sources",
+      "image": "power_28.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "3",
+        "9"
+      ]
+    },
+    "28": {
+      "name": "Glacier",
+      "description": "Releases glacial spikes over time that deal 15-30 damage to enemies that touch them and freeze them for 2.0 seconds. This ball and its glacial spikes also deal 6-12 damage to nearby units",
+      "image": "power_29.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "9",
+        "7"
+      ]
+    },
+    "29": {
+      "name": "Hemorrhage",
+      "description": "Inflicts 3 stacks of bleed. When hitting an enemy with 12 stacks of bleed or more, consumes all stacks of bleed to deal 20% of their current health",
+      "image": "power_30.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "1",
+        "11"
+      ]
+    },
+    "30": {
+      "name": "Holy Laser",
+      "description": "Deals 24-36 damage to all enemies in the same row and column",
+      "image": "power_31.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "12",
+        "13"
+      ]
+    },
+    "31": {
+      "name": "Incubus",
+      "description": "Each hit has a 4% chance of charming the enemy for 9 seconds. Charmed enemies curse nearby enemies. Cursed enemies are dealt 100-200 after being hit 5 times",
+      "image": "power_33.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "5",
+        "6"
+      ]
+    },
+    "32": {
+      "name": "Inferno",
+      "description": "Applies 1 stack of burn every second to all enemies within a 2 tile radius. Burn lasts for 6 seconds, dealing 3-7 damage per stack per second",
+      "image": "power_34.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "3",
+        "18"
+      ]
+    },
+    "34": {
+      "name": "Leech",
+      "description": "Attaches up to 1 leech onto enemies it hits, which adds 2 stacks of bleed per second (max 24 stacks)",
+      "image": "power_36.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "2",
+        "1"
+      ]
+    },
+    "35": {
+      "name": "Lightning Rod",
+      "description": "Plants a lightning rod into enemies it hits. These enemies are struck by lightning every 3.0 seconds, dealing 1-30 damage to up to 8 nearby enemies",
+      "image": "power_37.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "15",
+        "11"
+      ]
+    },
+    "37": {
+      "name": "Maggot",
+      "description": "Infest enemies on hit with maggots. When they die, they explode into 1-2 baby balls",
+      "image": "power_39.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "4",
+        "2"
+      ]
+    },
+    "38": {
+      "name": "Magma",
+      "description": "Emits lava blobs over time. Enemies who walk into lava blobs are dealt 15-30 damage and gain 1 stack of burn (max 3 stacks). Burn lasts for 3 seconds, dealing 3-8 damage per stack per second. This ball and its lava blobs also deal 6-12 damage to nearby units",
+      "image": "power_40.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "3",
+        "7"
+      ]
+    },
+    "39": {
+      "name": "Mosquito King",
+      "description": "Spawns a mosquito each time it hits an enemy. Mosquitos attack a random enemy, dealing 80-120 damage each. If a mosquito kills an enemy, they steal 1 health",
+      "image": "power_41.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "17",
+        "2"
+      ]
+    },
+    "40": {
+      "name": "Mosquito Swarm",
+      "description": "Explodes into 3-6 mosquitoes. Mosquitos attack random enemies, dealing 80-120 damage each. If a mosquito kills an enemy, they steal 1 health",
+      "image": "power_42.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "17",
+        "8"
+      ]
+    },
+    "41": {
+      "name": "Nosferatu",
+      "description": "Spawns a vampire bat each bounce. Vampire bats fly towards a random enemy, dealing 132-176 damage on hit, turning into a Vampire Lord",
+      "image": "power_43.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "57",
+        "52",
+        "39"
+      ]
+    },
+    "43": {
+      "name": "Nuclear Bomb",
+      "description": "Explodes when hitting an enemy, dealing 300-500 damage to nearby enemies and applying 1 stack of radiation to everyone present indefinitely (max 5 stacks). Each stack of radiation increases damage received by 10%. Has a 3-second cooldown",
+      "image": "power_45.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "23",
+        "16"
+      ]
+    },
+    "44": {
+      "name": "Overgrowth",
+      "description": "Applies 1 stack of overgrowth. Upon reaching 3, consume all stacks and deal 150-200 damage to all enemies in a 3x3 tile square",
+      "image": "power_46.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "7",
+        "4"
+      ]
+    },
+    "45": {
+      "name": "Phantom",
+      "description": "Curse enemies on hit. Cursed enemies are dealt 100-200 damage after being hit 5 times",
+      "image": "power_47.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "6",
+        "10"
+      ]
+    },
+    "47": {
+      "name": "Sacrifice",
+      "description": "Inflicts 4 stacks of bleed (max 15 stacks) and applies curse on hit to enemies. Cursed enemies are dealt 50-100 after being hit 5 times",
+      "image": "power_50.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "1",
+        "6"
+      ]
+    },
+    "48": {
+      "name": "Sandstorm",
+      "description": "Goes through enemies and is surrounded by a raging storm dealing 10-20 damage per second and blinding nearby enemies for 3 seconds",
+      "image": "power_51.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "7",
+        "18"
+      ]
+    },
+    "49": {
+      "name": "Satan",
+      "description": "While active, add 1 stack of burn to all active enemies per second (max 5 stacks), dealing 10-20 damage per stack per second and make them go berserk, dealing 15-24 damage to adjacent enemies every second",
+      "image": "power_52.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "31",
+        "54"
+      ]
+    },
+    "50": {
+      "name": "Shotgun",
+      "description": "Shoots 3-7 iron baby balls after hitting a wall. Iron baby balls move at 200% speed but are destroyed upon hitting anything",
+      "image": "power_53.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "11",
+        "8"
+      ]
+    },
+    "51": {
+      "name": "Soul Sucker",
+      "description": "Passes through enemies and saps them, with a 30% chance of stealing 1 health and reducing their attack damage by 20%. Lifesteal chance only applies once per enemy",
+      "image": "power_54.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "17",
+        "10"
+      ]
+    },
+    "52": {
+      "name": "Spider Queen",
+      "description": "Has a 25% chance of birthing an Egg Sac each time it hits an enemy",
+      "image": "power_55.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "2",
+        "8"
+      ]
+    },
+    "53": {
+      "name": "Storm",
+      "description": "Emits lightning to strike nearby enemies every second, dealing 1-40 damage",
+      "image": "power_56.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "15",
+        "18"
+      ]
+    },
+    "54": {
+      "name": "Succubus",
+      "description": "Each hit has a 4% chance of charming the enemy for 9 seconds. Heals 1 when hitting a charmed enemy",
+      "image": "power_57.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "5",
+        "17"
+      ]
+    },
+    "55": {
+      "name": "Sun",
+      "description": "Blind all enemies in view and add 1 stack of burn every second (max 5 stacks). Burn lasts for 6 seconds and deals 6-12 damage per stack per second",
+      "image": "power_58.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "3",
+        "14"
+      ]
+    },
+    "56": {
+      "name": "Swamp",
+      "description": "Leaves behind tar blobs over time. Enemies who walk into tar blobs are dealt 15-30, are slowed by 50% for 7 seconds and gain 1 stack of poison (max 8 stacks). Each stack of poison deals 1-3 damage per second. This ball and its tar blobs also deal 6-12 damage to nearby units",
+      "image": "power_59.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "16",
+        "7"
+      ]
+    },
+    "59": {
+      "name": "Voluptuous Egg Sac",
+      "description": "Explodes into 2-3 egg sacs on hitting an enemy. Has a 3-second cooldown before it can be shot again",
+      "image": "power_62.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "8",
+        "4"
+      ]
+    },
+    "60": {
+      "name": "Wraith",
+      "description": "Freezes any enemy it passes through for 0.8 seconds",
+      "image": "power_63.png",
+      "traits": [],
+      "is_combo": true,
+      "components": [
+        "9",
+        "10"
+      ]
+    }
+  }
+}

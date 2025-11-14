@@ -1,0 +1,92 @@
+{
+	"description": "Ejemplo de item NORMAL (básico)",
+	"html_row": "<tr class=\"border-b border-zinc-800 hover:bg-zinc-800/30 transition-colors bg-zinc-900/20 cursor-pointer \"><td class=\"px-6 py-4\"><div class=\"relative inline-block \"><div class=\"w-12 h-12 relative cursor-help\"><img alt=\"Archer's Effigy\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-contain\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_archers%20effigy.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_archers%20effigy.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_archers%20effigy.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_archers%20effigy.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_archers%20effigy.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_archers%20effigy.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_archers%20effigy.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_archers%20effigy.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_archers%20effigy.png&amp;w=3840&amp;q=75\"></div></div></td><td class=\"px-6 py-4 text-white font-medium\">Archer's Effigy</td><td class=\"px-6 py-4 text-zinc-300\">Every 7-12 rows, spawn a stone archer with 160 health on your side. Stone archers are immune to ball damage and shoot arrows at enemies, dealing 10-20 each</td><td class=\"px-6 py-4\"><div class=\"flex flex-wrap gap-1\"><span class=\"px-2 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 text-xs font-semibold rounded\">Summon</span></div></td><td class=\"px-6 py-4\"><div class=\"flex justify-center\"><span class=\"px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 text-xs font-semibold rounded-full\">Basic</span></div></td></tr>",
+
+	"parsed_data": {
+		"icon": {
+			"alt": "Archer's Effigy",
+			"src": "/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_archers%20effigy.png&w=3840&q=75",
+			"original_path": "/images/items/passive_icon_archers effigy.png"
+		},
+		"name": "Archer's Effigy",
+		"description": "Every 7-12 rows, spawn a stone archer with 160 health on your side. Stone archers are immune to ball damage and shoot arrows at enemies, dealing 10-20 each",
+		"traits": ["Summon"],
+		"type": "Basic",
+		"is_basic_item": true,
+		"is_evolved": false
+	},
+
+	"html_structure_analysis": {
+		"columns": [
+			{
+				"index": 0,
+				"type": "icon",
+				"selector": "td:nth-child(1) img",
+				"attributes": {
+					"alt": "Archer's Effigy",
+					"src": "image_url",
+					"srcset": "responsive_images"
+				},
+				"note": "Imagen del item, path incluye 'passive_icon_' prefix"
+			},
+			{
+				"index": 1,
+				"type": "name",
+				"selector": "td:nth-child(2)",
+				"content": "Archer's Effigy",
+				"note": "Nombre del item, no hay ID numérico como en poderes"
+			},
+			{
+				"index": 2,
+				"type": "description",
+				"selector": "td:nth-child(3)",
+				"content": "Every 7-12 rows, spawn a stone archer with 160 health on your side. Stone archers are immune to ball damage and shoot arrows at enemies, dealing 10-20 each",
+				"note": "Descripción detallada del efecto del item"
+			},
+			{
+				"index": 3,
+				"type": "traits",
+				"selector": "td:nth-child(4) span",
+				"content": ["Summon"],
+				"note": "Tags/categorías (1 o más spans)"
+			},
+			{
+				"index": 4,
+				"type": "type",
+				"selector": "td:nth-child(5) span",
+				"content": "Basic",
+				"note": "Tipo de item en badge rounded-full, centrado",
+				"badge_class": "bg-blue-900/30 border border-blue-500/50 text-blue-400"
+			}
+		],
+		"row_class": "border-b border-zinc-800 hover:bg-zinc-800/30 transition-colors bg-zinc-900/20 cursor-pointer"
+	},
+
+	"mapping_to_items_json": {
+		"item_id": "archers_effigy",
+		"item_entry": {
+			"name": "Archer's Effigy",
+			"description": "Every 7-12 rows, spawn a stone archer with 160 health on your side. Stone archers are immune to ball damage and shoot arrows at enemies, dealing 10-20 each",
+			"type": "Basic",
+			"traits": ["Summon"],
+			"image": "assets/items/archers_effigy.png"
+		}
+	},
+
+	"implementation_notes": {
+		"detection": "Type column contiene 'Basic' → item básico",
+		"storage": "Guardar en items.json section 'items'",
+		"traits_extraction": "Múltiples <span> tags dentro de td:nth-child(4)",
+		"type_extraction": "Extraer texto del <span> dentro de td:nth-child(5) div",
+		"image_path": "Formato: /images/items/passive_icon_{item_name}.png",
+		"id_generation": "Slugify el nombre (archer's effigy → archers_effigy)"
+	},
+
+	"type_badge_styling": {
+		"background": "bg-blue-900/30",
+		"border": "border border-blue-500/50",
+		"text": "text-blue-400",
+		"shape": "rounded-full (pill shape)",
+		"note": "Different from traits badges which are 'rounded' (not full)"
+	}
+}

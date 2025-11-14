@@ -1,0 +1,157 @@
+{
+	"// EJEMPLO DE COMBOS EN CADENA": "Este archivo muestra cómo configurar combos anidados",
+
+	"powers": {
+		"fuego": {
+			"name": "Fuego",
+			"description": "Poder básico de fuego que causa daño elemental",
+			"level_required": 1,
+			"type": "basic",
+			"image": "assets/powers/fuego.png"
+		},
+		"agua": {
+			"name": "Agua",
+			"description": "Poder básico de agua que cura y enfría",
+			"level_required": 1,
+			"type": "basic",
+			"image": "assets/powers/agua.png"
+		},
+		"rayo": {
+			"name": "Rayo",
+			"description": "Poder básico de electricidad que paraliza",
+			"level_required": 1,
+			"type": "basic",
+			"image": "assets/powers/rayo.png"
+		},
+		"viento": {
+			"name": "Viento",
+			"description": "Poder básico de viento que empuja enemigos",
+			"level_required": 1,
+			"type": "basic",
+			"image": "assets/powers/viento.png"
+		}
+	},
+
+	"combos": {
+		"// NIVEL 1 - Combos básicos": "Poder + Poder",
+
+		"fuego+agua": {
+			"result": "vapor",
+			"type": "combo",
+			"name": "Vapor",
+			"description": "Combinación de fuego y agua crea vapor que oscurece visión"
+		},
+		"fuego+rayo": {
+			"result": "plasma",
+			"type": "combo",
+			"name": "Plasma",
+			"description": "Fuego electrificado que causa daño masivo"
+		},
+		"agua+rayo": {
+			"result": "tormenta",
+			"type": "combo",
+			"name": "Tormenta",
+			"description": "Agua electrificada que causa daño en área"
+		},
+
+		"// NIVEL 2 - Combos anidados": "Combo + Poder",
+
+		"vapor+rayo": {
+			"result": "nube_electrica",
+			"type": "combo",
+			"name": "Nube Eléctrica",
+			"description": "Vapor electrificado que paraliza y oscurece. NECESITA: Fuego + Agua (=Vapor), luego + Rayo"
+		},
+		"vapor+viento": {
+			"result": "niebla_densa",
+			"type": "combo",
+			"name": "Niebla Densa",
+			"description": "Vapor dispersado que cubre gran área. NECESITA: Fuego + Agua (=Vapor), luego + Viento"
+		},
+		"plasma+agua": {
+			"result": "explosion_termica",
+			"type": "combo",
+			"name": "Explosión Térmica",
+			"description": "Choque térmico extremo. NECESITA: Fuego + Rayo (=Plasma), luego + Agua"
+		},
+
+		"// NIVEL 3 - Super combos": "Combo + Combo",
+
+		"nube_electrica+tormenta": {
+			"result": "apocalipsis_electrico",
+			"type": "combo",
+			"name": "Apocalipsis Eléctrico",
+			"description": "Combo definitivo eléctrico. NECESITA: (Fuego+Agua+Rayo) + (Agua+Rayo)"
+		}
+	},
+
+	"combo_powers": {
+		"// NIVEL 1 RESULTADOS": "Estos se pueden usar en combos futuros",
+
+		"vapor": {
+			"name": "Vapor",
+			"description": "Niebla caliente que oscurece la visión",
+			"image": "assets/powers/vapor.png",
+			"components": ["fuego", "agua"]
+		},
+		"plasma": {
+			"name": "Plasma",
+			"description": "Fuego electrificado de alto poder",
+			"image": "assets/powers/plasma.png",
+			"components": ["fuego", "rayo"]
+		},
+		"tormenta": {
+			"name": "Tormenta",
+			"description": "Agua electrificada en área",
+			"image": "assets/powers/tormenta.png",
+			"components": ["agua", "rayo"]
+		},
+
+		"// NIVEL 2 RESULTADOS": "Combos que usan otros combos",
+
+		"nube_electrica": {
+			"name": "Nube Eléctrica",
+			"description": "Vapor cargado eléctricamente",
+			"image": "assets/powers/nube_electrica.png",
+			"components": ["vapor", "rayo"]
+		},
+		"niebla_densa": {
+			"name": "Niebla Densa",
+			"description": "Niebla extendida por gran área",
+			"image": "assets/powers/niebla_densa.png",
+			"components": ["vapor", "viento"]
+		},
+		"explosion_termica": {
+			"name": "Explosión Térmica",
+			"description": "Choque térmico devastador",
+			"image": "assets/powers/explosion_termica.png",
+			"components": ["plasma", "agua"]
+		},
+
+		"// NIVEL 3 RESULTADOS": "Super combos finales",
+
+		"apocalipsis_electrico": {
+			"name": "Apocalipsis Eléctrico",
+			"description": "Tormenta eléctrica apocalíptica que cubre todo el campo",
+			"image": "assets/powers/apocalipsis_electrico.png",
+			"components": ["nube_electrica", "tormenta"]
+		}
+	},
+
+	"// EJEMPLO DE TOOLTIP": {
+		"cuando_haces_hover_en_fuego": [
+			"=== Fuego ===",
+			"Combos Posibles:",
+			"• Con Agua → Vapor",
+			"  ⚡ COMBO EN CADENA:",
+			"    → Agregar poder 'Rayo' = Nube Eléctrica",
+			"    → Agregar poder 'Viento' = Niebla Densa",
+			"  Poderes base: fuego, agua, rayo",
+			"",
+			"• Con Rayo → Plasma",
+			"  ⚡ COMBO EN CADENA:",
+			"    → Agregar poder 'Agua' = Explosión Térmica",
+			"  Poderes base: fuego, rayo, agua"
+		]
+	}
+}

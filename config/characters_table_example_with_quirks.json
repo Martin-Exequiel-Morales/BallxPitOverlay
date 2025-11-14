@@ -1,0 +1,61 @@
+{
+	"description": "Example of character WITH quirks - Medium difficulty",
+	"character_name": "The Itchy Finger",
+	"difficulty": "Medium",
+	"starting_power": "Burn",
+	"has_quirks": true,
+	"unlock_requirement": "Build the Sheriff's Office Blueprint, which is unlocked by clearing the Bone x Yard biome.",
+
+	"parsing_notes": {
+		"hud_image": {
+			"alt": "The Itchy Finger HUD",
+			"size": "48x48",
+			"path": "/images/characters/hud_itchy_finger.png"
+		},
+		"portrait_image": {
+			"alt": "The Itchy Finger Portrait",
+			"size": "100x100",
+			"path": "/images/characters/itchy_finger.png"
+		},
+		"difficulty_badge": {
+			"text": "Medium",
+			"color_classes": "text-yellow-400 border-yellow-500/50 bg-yellow-900/30",
+			"note": "Yellow color scheme for Medium difficulty"
+		},
+		"starting_ball": {
+			"power_name": "Burn",
+			"icon_path": "/images/balls/ball_icon_burn.png",
+			"icon_size": "12x12 (w-12 h-12 in container)",
+			"label_style": "text-xs text-zinc-300 text-center",
+			"layout": "flex flex-col items-center gap-2"
+		},
+		"quirks_column": {
+			"format": "unordered_list",
+			"html_structure": "<ul class='text-sm text-zinc-300 list-disc list-inside space-y-1'>",
+			"item_style": "leading-relaxed",
+			"quirks_list": [
+				"Scattered aim",
+				"Shoots twice as fast",
+				"Auto-fire only",
+				"Moves at full speed while shooting"
+			],
+			"note": "When character HAS quirks, they appear as bulleted list items, not as italic 'None' text"
+		},
+		"unlock_method": {
+			"text": "Build the Sheriff's Office Blueprint, which is unlocked by clearing the Bone x Yard biome.",
+			"style": "text-zinc-300",
+			"note": "More complex unlock condition than 'Available from the start'"
+		}
+	},
+
+	"scraping_strategy": {
+		"quirks_detection": "Check if td contains <ul> element (has quirks) or <span class='italic'> with 'None' text (no quirks)",
+		"quirks_extraction": "If <ul> exists, iterate over <li> elements and extract text content from each",
+		"difficulty_color_mapping": {
+			"Easy": "green (text-green-400 border-green-500/50 bg-green-900/30)",
+			"Medium": "yellow (text-yellow-400 border-yellow-500/50 bg-yellow-900/30)",
+			"Hard": "TBD - need example",
+			"Expert": "TBD - need example"
+		}
+	}
+}

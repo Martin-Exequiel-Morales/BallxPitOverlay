@@ -1,0 +1,151 @@
+{
+	"table_type": "items",
+	"description": "Estructura de la tabla HTML de items del juego",
+	"url_expected": "/items o similar",
+
+	"table_head_html": "<tr class=\"bg-zinc-800/50 border-b border-zinc-700\"><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-left \">Icon</th><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-left \">Name</th><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-left \">Description</th><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-left \">Traits</th><th class=\"px-6 py-4 text-sm font-semibold text-zinc-400 uppercase tracking-wider text-center \">Type</th></tr>",
+
+	"columns": [
+		{
+			"index": 0,
+			"name": "Icon",
+			"type": "image",
+			"alignment": "left",
+			"selector": "td:nth-child(1) img",
+			"description": "Icono del item",
+			"expected_attributes": ["src", "alt", "srcset"]
+		},
+		{
+			"index": 1,
+			"name": "Name",
+			"type": "text",
+			"alignment": "left",
+			"selector": "td:nth-child(2)",
+			"description": "Nombre del item",
+			"usage": "Identificador principal del item"
+		},
+		{
+			"index": 2,
+			"name": "Description",
+			"type": "text",
+			"alignment": "left",
+			"selector": "td:nth-child(3)",
+			"description": "Descripción detallada del item",
+			"usage": "Efecto, estadísticas, bonuses"
+		},
+		{
+			"index": 3,
+			"name": "Traits",
+			"type": "multiple_badges",
+			"alignment": "left",
+			"selector": "td:nth-child(4) span",
+			"description": "Categorías/tags del item",
+			"usage": "Clasificación, filtrado, búsqueda",
+			"expected_format": "Múltiples <span> tags con badges"
+		},
+		{
+			"index": 4,
+			"name": "Type",
+			"type": "text",
+			"alignment": "center",
+			"selector": "td:nth-child(5)",
+			"description": "Tipo de item",
+			"possible_values": [
+				"weapon",
+				"armor",
+				"accessory",
+				"consumable",
+				"special",
+				"other"
+			],
+			"usage": "Categorización principal del item"
+		}
+	],
+
+	"total_columns": 5,
+
+	"differences_from_powers_table": {
+		"removed_columns": ["ID (column 1 in powers table - no existe en items)"],
+		"changed_columns": [
+			"Evolution Recipe → Type (items tienen tipo en vez de receta de evolución)"
+		],
+		"column_count": "5 columnas vs 6 en poderes",
+		"key_difference": "Items NO tienen columna de ID numérico y NO tienen Evolution Recipe, en su lugar tienen Type"
+	},
+
+	"mapping_to_items_json": {
+		"structure": {
+			"items": {
+				"item_id_slug": {
+					"name": "extracted from Name column",
+					"description": "extracted from Description column",
+					"type": "extracted from Type column",
+					"traits": ["extracted from Traits column spans"],
+					"image": "extracted from Icon img src"
+				}
+			},
+			"combos": {
+				"item1+item2": {
+					"result": "combo_item_id",
+					"type": "item_combo",
+					"name": "combo item name",
+					"description": "combo description"
+				}
+			},
+			"combo_items": {
+				"combo_item_id": {
+					"name": "result name",
+					"description": "result description",
+					"type": "result type",
+					"traits": ["result traits"],
+					"image": "result image",
+					"components": ["item1", "item2"]
+				}
+			}
+		}
+	},
+
+	"html_selectors": {
+		"table_selector": "table",
+		"header_row": "tr.bg-zinc-800\\/50",
+		"data_rows": "tr.border-b.border-zinc-800",
+		"icon_img": "td:nth-child(1) img",
+		"name_cell": "td:nth-child(2)",
+		"description_cell": "td:nth-child(3)",
+		"traits_badges": "td:nth-child(4) span",
+		"type_cell": "td:nth-child(5)"
+	},
+
+	"expected_row_structure": {
+		"classes": "border-b border-zinc-800 hover:bg-zinc-800/30 transition-colors",
+		"cells": [
+			"Icon (img in div)",
+			"Name (text)",
+			"Description (text)",
+			"Traits (multiple spans)",
+			"Type (text, centered)"
+		]
+	},
+
+	"scraping_strategy": {
+		"step_1": "Find table with items",
+		"step_2": "Iterate all <tr> rows (skip header)",
+		"step_3": "For each row, extract 5 columns",
+		"step_4": "Parse Icon img src to get image path",
+		"step_5": "Extract Name as item identifier (slugify for item_id)",
+		"step_6": "Extract Description text",
+		"step_7": "Extract all Traits from span tags",
+		"step_8": "Extract Type from centered column",
+		"step_9": "Check if Type indicates combo (or use separate combo table logic)",
+		"step_10": "Store in items.json structure"
+	},
+
+	"notes": [
+		"Items table NO tiene Evolution Recipe column como la tabla de poderes",
+		"Items table NO tiene columna ID numérica",
+		"Type column es center-aligned (vs left para otras)",
+		"Traits funciona igual que en poderes (múltiples badges)",
+		"Necesitaremos ver ejemplos de filas para determinar cómo detectar combos de items",
+		"Posiblemente los combos de items estén en descripción o en tabla separada"
+	]
+}

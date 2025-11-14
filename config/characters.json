@@ -1,0 +1,190 @@
+[
+  {
+    "name": "The Warrior",
+    "difficulty": "Easy",
+    "starting_power": "Bleed",
+    "quirks": null,
+    "unlock_method": "Available from the start.",
+    "hud_icon": "character_1_hud.png",
+    "portrait": "character_1_portrait.png"
+  },
+  {
+    "name": "The Itchy Finger",
+    "difficulty": "Medium",
+    "starting_power": "Burn",
+    "quirks": [
+      "Scattered aim",
+      "Shoots twice as fast",
+      "Auto-fire only",
+      "Moves at full speed while shooting"
+    ],
+    "unlock_method": "Build the Sheriff's Office Blueprint, which is unlocked by clearing the Bone x Yard biome.",
+    "hud_icon": "character_2_hud.png",
+    "portrait": "character_2_portrait.png"
+  },
+  {
+    "name": "The Embedded",
+    "difficulty": "Medium",
+    "starting_power": "Poison",
+    "quirks": [
+      "Balls pierce enemies until they hit a wall (back wall included)"
+    ],
+    "unlock_method": "Build the Veteran's Hut Blueprint, which is unlocked by clearing the Snowy x Shores biome.",
+    "hud_icon": "character_3_hud.png",
+    "portrait": "character_3_portrait.png"
+  },
+  {
+    "name": "The Repentant",
+    "difficulty": "Medium",
+    "starting_power": "Freeze",
+    "quirks": [
+      "Balls gain 5% damage with each bounce",
+      "Balls return to you after they hit the back wall, damaging enemies they pass through on the way back"
+    ],
+    "unlock_method": "Build the Haunted House Blueprint, which is unlocked by clearing the Snowy x Shores biome.",
+    "hud_icon": "character_4_hud.png",
+    "portrait": "character_4_portrait.png"
+  },
+  {
+    "name": "The Cohabitants",
+    "difficulty": "Medium",
+    "starting_power": "Brood Mother",
+    "quirks": [
+      "Every ball is fired with a duplicate in the mirrored direction",
+      "All balls deal half damage"
+    ],
+    "unlock_method": "Build the Cozy Home Blueprint, which is unlocked by clearing the Bone x Yard biome.",
+    "hud_icon": "character_5_hud.png",
+    "portrait": "character_5_portrait.png"
+  },
+  {
+    "name": "The Physicist",
+    "difficulty": "Medium",
+    "starting_power": "Light",
+    "quirks": [
+      "Balls are pulled by gravity toward the back wall (balls fired at an angle will curve toward straight)"
+    ],
+    "unlock_method": "Build the Laboratory Blueprint, which is unlocked by clearing the Fungal x Forest biome.",
+    "hud_icon": "character_6_hud.png",
+    "portrait": "character_6_portrait.png"
+  },
+  {
+    "name": "The Spendthrift",
+    "difficulty": "Medium",
+    "starting_power": "Vampire",
+    "quirks": [
+      "All balls are fired simultaneously in an arc"
+    ],
+    "unlock_method": "Build the Mansion Blueprint, which is unlocked by clearing the Fungal x Forest biome.",
+    "hud_icon": "character_7_hud.png",
+    "portrait": "character_7_portrait.png"
+  },
+  {
+    "name": "The Flagellant",
+    "difficulty": "Hard",
+    "starting_power": "Egg Sac",
+    "quirks": [
+      "Balls bounce off the bottom of the screen, meaning they must be caught to be re-fired"
+    ],
+    "unlock_method": "Build the Monastery Blueprint, which you can unlock by clearing the Gory x Grasslands biome.",
+    "hud_icon": "character_8_hud.png",
+    "portrait": "character_8_portrait.png"
+  },
+  {
+    "name": "The Shade",
+    "difficulty": "Medium",
+    "starting_power": "Dark",
+    "quirks": [
+      "Balls are fired from the back wall",
+      "Balls start with a base critical hit chance of 10%"
+    ],
+    "unlock_method": "Build the Mausoleum Blueprint, which is unlocked by clearing the Liminal x Desert biome.",
+    "hud_icon": "character_9_hud.png",
+    "portrait": "character_9_portrait.png"
+  },
+  {
+    "name": "The Radical",
+    "difficulty": "Easy",
+    "starting_power": "Wind",
+    "quirks": [
+      "Plays the game automatically",
+      "Upgrades are chosen automatically"
+    ],
+    "unlock_method": "Build the Campground Blueprint, which is unlocked by clearing the Heavenly x Gates biome.",
+    "hud_icon": "character_10_hud.png",
+    "portrait": "character_10_portrait.png"
+  },
+  {
+    "name": "The Empty Nester",
+    "difficulty": "Medium",
+    "starting_power": "Ghost",
+    "quirks": [
+      "No baby balls",
+      "Multiple of each equipped special ball are fired"
+    ],
+    "unlock_method": "Build the Single Family Home Blueprint, which is unlocked by clearing the Snowy x Shores biome.",
+    "hud_icon": "character_12_hud.png",
+    "portrait": "character_12_portrait.png"
+  },
+  {
+    "name": "The Shieldbearer",
+    "difficulty": "Hard",
+    "starting_power": "Iron",
+    "quirks": [
+      "Bounces balls off of a shield instead of catching them from the front",
+      "A ball's damage doubles every time it bounces off the shield consecutively",
+      "Infinite pickup range",
+      "Nerfed ball speed"
+    ],
+    "unlock_method": "Build the Iron Fortress Blueprint, which is unlocked by clearing the Fungal x Forest biome.",
+    "hud_icon": "character_13_hud.png",
+    "portrait": "character_13_portrait.png"
+  },
+  {
+    "name": "The Cogitator",
+    "difficulty": "Easy",
+    "starting_power": "Laser (Vertical)",
+    "quirks": [
+      "Upgrades are chosen automatically"
+    ],
+    "unlock_method": "Build the Villa Blueprint, which is unlocked by clearing the Snowy x Shores biome.",
+    "hud_icon": "character_14_hud.png",
+    "portrait": "character_14_portrait.png"
+  },
+  {
+    "name": "The Tactician",
+    "difficulty": "Hard",
+    "starting_power": "Iron",
+    "quirks": [
+      "Battles become turn-based",
+      "Infinite pickup range"
+    ],
+    "unlock_method": "Build the Captain's Headquarters Blueprint, which is unlocked by clearing the Smoldering x Depths biome.",
+    "hud_icon": "character_15_hud.png",
+    "portrait": "character_15_portrait.png"
+  },
+  {
+    "name": "The Juggler",
+    "difficulty": "Hard",
+    "starting_power": "Lightning",
+    "quirks": [
+      "Balls are launched into the air, rather than straight ahead",
+      "Balls only start bouncing after they land in the targeted area"
+    ],
+    "unlock_method": "Build the Theater Blueprint, which you can unlock by clearing the Gory x Grasslands biome.",
+    "hud_icon": "character_16_hud.png",
+    "portrait": "character_16_portrait.png"
+  },
+  {
+    "name": "The Makeshift Sisyphus",
+    "difficulty": "Hard",
+    "starting_power": "Earthquake",
+    "quirks": [
+      "No baby balls",
+      "Balls deal only area-of-effect damage, no direct damage"
+    ],
+    "unlock_method": "Unlock the Rocky Hill in the late stages of the game.",
+    "hud_icon": "character_17_hud.png",
+    "portrait": "character_17_portrait.png"
+  }
+]

@@ -1,0 +1,172 @@
+{
+	"example_type": "three_component_combo",
+	"description": "Ejemplo de fila con COMBO DE 3 COMPONENTES (no solo 2)",
+	"parsed_data": {
+		"result": {
+			"id": "41",
+			"name": "Nosferatu",
+			"description": "Spawns a vampire bat each bounce. Vampire bats fly towards a random enemy, dealing 132-176 damage on hit, turning into a Vampire Lord",
+			"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_nosferatu.png",
+			"image_filename": "ball_icon_nosferatu.png",
+			"traits": ["Summon", "Lifesteal"]
+		},
+		"evolution_recipe": {
+			"type": "multi_component_combo",
+			"component_count": 3,
+			"components": [
+				{
+					"name": "Vampire Lord",
+					"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_vampire%20lord.png",
+					"image_filename": "ball_icon_vampire lord.png",
+					"is_combo": true,
+					"note": "Este es resultado de un combo previo (Vampire + Bleed/Dark)"
+				},
+				{
+					"name": "Spider Queen",
+					"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_spider%20queen.png",
+					"image_filename": "ball_icon_spider queen.png",
+					"is_combo": true,
+					"note": "Posiblemente resultado de otro combo"
+				},
+				{
+					"name": "Mosquito King",
+					"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_mosquito%20king.png",
+					"image_filename": "ball_icon_mosquito king.png",
+					"is_combo": true,
+					"note": "Posiblemente resultado de otro combo"
+				}
+			],
+			"formula": "Vampire Lord + Spider Queen + Mosquito King = Nosferatu"
+		}
+	},
+	"system_implications": {
+		"problem": "El sistema actual solo soporta COMBOS DE 2 COMPONENTES",
+		"reality": "Este juego permite COMBOS DE 3 O MÁS COMPONENTES",
+		"solutions": [
+			{
+				"option": "1. Combinar en cadena",
+				"description": "Hacer primero A+B=AB, luego AB+C=ABC",
+				"pros": ["Compatible con sistema actual", "Soporta combos anidados"],
+				"cons": ["Requiere pasos intermedios", "No es tan directo"]
+			},
+			{
+				"option": "2. Extender el sistema",
+				"description": "Modificar PowerManager para soportar 3+ componentes",
+				"pros": ["Más directo", "Refleja la realidad del juego"],
+				"cons": ["Requiere refactorización", "UI más compleja"]
+			},
+			{
+				"option": "3. Híbrido (RECOMENDADO)",
+				"description": "Permitir combos de 2 o 3 componentes, descomponerlos en pares internamente",
+				"pros": ["Flexible", "Backwards compatible", "Fácil de implementar"],
+				"cons": ["Complejidad moderada"]
+			}
+		]
+	},
+	"recommended_implementation": {
+		"approach": "Hybrid - Soporte para 2 y 3 componentes",
+		"json_structure": {
+			"powers": {
+				"vampire_lord": {
+					"name": "Vampire Lord",
+					"type": "combo",
+					"image": "assets/powers/ball_icon_vampire lord.png"
+				},
+				"spider_queen": {
+					"name": "Spider Queen",
+					"type": "combo",
+					"image": "assets/powers/ball_icon_spider queen.png"
+				},
+				"mosquito_king": {
+					"name": "Mosquito King",
+					"type": "combo",
+					"image": "assets/powers/ball_icon_mosquito king.png"
+				}
+			},
+			"combos_option_1_sequential": {
+				"vampire_lord+spider_queen": {
+					"result": "vampire_spider_temp",
+					"type": "combo",
+					"name": "Vampire Spider (Temp)",
+					"description": "Combinación intermedia"
+				},
+				"vampire_spider_temp+mosquito_king": {
+					"result": "nosferatu",
+					"type": "combo",
+					"name": "Nosferatu",
+					"description": "Spawns a vampire bat each bounce..."
+				}
+			},
+			"combos_option_2_extended": {
+				"vampire_lord+spider_queen+mosquito_king": {
+					"result": "nosferatu",
+					"type": "triple_combo",
+					"component_count": 3,
+					"name": "Nosferatu",
+					"description": "Spawns a vampire bat each bounce..."
+				}
+			}
+		},
+		"combo_powers": {
+			"nosferatu": {
+				"name": "Nosferatu",
+				"description": "Spawns a vampire bat each bounce. Vampire bats fly towards a random enemy, dealing 132-176 damage on hit, turning into a Vampire Lord",
+				"image": "assets/powers/ball_icon_nosferatu.png",
+				"components": ["vampire_lord", "spider_queen", "mosquito_king"],
+				"component_count": 3,
+				"traits": ["Summon", "Lifesteal"],
+				"is_triple_combo": true
+			}
+		}
+	},
+	"configurator_implications": {
+		"ui_changes": [
+			"Agregar opción para '3 Componentes' en pestaña de combos",
+			"Mostrar 3 dropdowns en lugar de 2 cuando sea necesario",
+			"Indicar visualmente combos de 3 componentes con icono especial"
+		],
+		"validation": [
+			"Verificar que los 3 componentes existan",
+			"Permitir mezcla de poderes básicos y combos",
+			"Advertir si todos los componentes son básicos (poco común para 3)"
+		]
+	},
+	"power_manager_changes": {
+		"new_method": "combine_three_powers(slot1, slot2, slot3)",
+		"combo_key_format": "power1+power2+power3",
+		"lookup_logic": "Verificar todas las permutaciones (A+B+C, A+C+B, B+A+C, etc.)",
+		"ui_flow": [
+			"Usuario selecciona 3 poderes",
+			"Sistema verifica si existe combo de 3",
+			"Si existe, crea el resultado y libera los 3 slots"
+		]
+	},
+	"tooltip_recommendations": {
+		"when_hovering_vampire_lord": [
+			"=== Vampire Lord === [COMBO]",
+			"Descripción: Each hit inflicts 3 stacks...",
+			"",
+			"--- Combos Posibles ---",
+			"• Con Spider Queen + Mosquito King → Nosferatu ⭐",
+			"  [COMBO DE 3 COMPONENTES]",
+			"  Necesitas reunir todos los componentes",
+			"",
+			"💡 Este es un combo avanzado que requiere 3 poderes!"
+		]
+	},
+	"html_structure_analysis": {
+		"pattern": "component + component + component",
+		"separator_count": 2,
+		"separators": "Two '+' spans between three components",
+		"structure": "Same as 2-component but with additional '+' and component"
+	},
+	"notes": [
+		"⚠️ IMPORTANTE: El juego soporta combos de 3+ componentes",
+		"Los 3 componentes en este caso son TODOS combos previos",
+		"Esto es un SUPER COMBO que requiere haber creado 3 combos antes",
+		"El sistema debe ser capaz de manejar esto",
+		"Probablemente hay combos de 2 + 1, 1 + 1 + 1, etc.",
+		"La UI debe ser flexible para mostrar N componentes"
+	],
+	"priority": "HIGH - Este es un patrón fundamental del juego que debe soportarse"
+}

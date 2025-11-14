@@ -1,0 +1,123 @@
+{
+	"example_type": "simple_combo",
+	"description": "Ejemplo de fila que representa un combo simple (2 componentes básicos)",
+	"parsed_data": {
+		"result": {
+			"id": "56",
+			"name": "Swamp",
+			"description": "Leaves behind tar blobs over time. Enemies who walk into tar blobs are dealt 15-30, are slowed by 50% for 7 seconds and gain 1 stack of poison (max 8 stacks). Each stack of poison deals 1-3 damage per second. This ball and its tar blobs also deal 6-12 damage to nearby units",
+			"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_swamp.png",
+			"image_filename": "ball_icon_swamp.png",
+			"traits": ["Poison", "Slow", "AoE", "DoT"]
+		},
+		"evolution_recipe": {
+			"type": "simple_combo",
+			"component_count": 2,
+			"components": [
+				{
+					"name": "Poison",
+					"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_poison.png",
+					"image_filename": "ball_icon_poison.png",
+					"is_combo": false
+				},
+				{
+					"name": "Earthquake",
+					"image": "/_next/image?url=%2Fimages%2Fballs%2Fball_icon_earthquake.png",
+					"image_filename": "ball_icon_earthquake.png",
+					"is_combo": false
+				}
+			],
+			"formula": "Poison + Earthquake = Swamp"
+		}
+	},
+	"mapping_to_powers_json": {
+		"powers": {
+			"poison": {
+				"name": "Poison",
+				"description": "Poder base de veneno",
+				"type": "basic",
+				"image": "assets/powers/ball_icon_poison.png"
+			},
+			"earthquake": {
+				"name": "Earthquake",
+				"description": "Poder base de terremoto",
+				"type": "basic",
+				"image": "assets/powers/ball_icon_earthquake.png"
+			}
+		},
+		"combos": {
+			"poison+earthquake": {
+				"result": "swamp",
+				"type": "combo",
+				"name": "Swamp",
+				"description": "Leaves behind tar blobs over time. Enemies who walk into tar blobs are dealt 15-30, are slowed by 50% for 7 seconds and gain 1 stack of poison (max 8 stacks). Each stack of poison deals 1-3 damage per second. This ball and its tar blobs also deal 6-12 damage to nearby units"
+			}
+		},
+		"combo_powers": {
+			"swamp": {
+				"name": "Swamp",
+				"description": "Leaves behind tar blobs over time. Enemies who walk into tar blobs are dealt 15-30, are slowed by 50% for 7 seconds and gain 1 stack of poison (max 8 stacks). Each stack of poison deals 1-3 damage per second. This ball and its tar blobs also deal 6-12 damage to nearby units",
+				"image": "assets/powers/ball_icon_swamp.png",
+				"components": ["poison", "earthquake"],
+				"traits": ["Poison", "Slow", "AoE", "DoT"]
+			}
+		}
+	},
+	"html_structure_analysis": {
+		"columns": [
+			{
+				"index": 0,
+				"name": "icon",
+				"selector": "td:nth-child(1) img",
+				"attributes": ["alt", "src", "srcset"]
+			},
+			{
+				"index": 1,
+				"name": "id",
+				"selector": "td:nth-child(2)",
+				"text_content": "56"
+			},
+			{
+				"index": 2,
+				"name": "name",
+				"selector": "td:nth-child(3)",
+				"text_content": "Swamp"
+			},
+			{
+				"index": 3,
+				"name": "description",
+				"selector": "td:nth-child(4)",
+				"text_content": "long description"
+			},
+			{
+				"index": 4,
+				"name": "traits",
+				"selector": "td:nth-child(5) span",
+				"extract_method": "multiple spans with text"
+			},
+			{
+				"index": 5,
+				"name": "evolution_recipe",
+				"selector": "td:nth-child(6) .flex-col",
+				"structure": "div containers with img and span for each component, separated by '+' span"
+			}
+		],
+		"recipe_structure": {
+			"pattern": "component + component",
+			"component_selector": ".flex-col",
+			"component_parts": {
+				"image": "img[alt]",
+				"name": "span.text-xs"
+			},
+			"separator": "span containing '+'"
+		}
+	},
+	"notes": [
+		"Este es un COMBO SIMPLE: 2 poderes básicos crean 1 nuevo poder",
+		"El ID '56' parece ser numérico y consecutivo",
+		"Los traits son tags que describen efectos: Poison, Slow, AoE, DoT",
+		"La imagen usa Next.js Image Optimization con múltiples srcset",
+		"Los componentes se muestran con icono + nombre debajo",
+		"El separador '+' indica la combinación visual"
+	]
+}

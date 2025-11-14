@@ -1,0 +1,55 @@
+{
+	"description": "Example of Hard difficulty character with single quirk",
+	"character_name": "The Flagellant",
+	"difficulty": "Hard",
+	"starting_power": "Egg Sac",
+	"has_quirks": true,
+	"unlock_requirement": "Build the Monastery Blueprint, which you can unlock by clearing the Gory x Grasslands biome.",
+
+	"parsing_notes": {
+		"hud_image": {
+			"alt": "The Flagellant HUD",
+			"size": "48x48",
+			"path": "/images/characters/hud_flagellant.png"
+		},
+		"portrait_image": {
+			"alt": "The Flagellant Portrait",
+			"size": "100x100",
+			"path": "/images/characters/flagellant.png"
+		},
+		"difficulty_badge": {
+			"text": "Hard",
+			"color_classes": "text-red-400 border-red-500/50 bg-red-900/30",
+			"note": "Red color scheme for Hard difficulty"
+		},
+		"starting_ball": {
+			"power_name": "Egg Sac",
+			"icon_path": "/images/balls/ball_icon_egg sac.png",
+			"icon_size": "12x12 (w-12 h-12 in container)",
+			"label_style": "text-xs text-zinc-300 text-center",
+			"note": "Power name contains space in filename"
+		},
+		"quirks_column": {
+			"format": "unordered_list",
+			"quirk_count": 1,
+			"quirks_list": [
+				"Balls bounce off the bottom of the screen, meaning they must be caught to be re-fired"
+			],
+			"note": "Even single quirk uses <ul><li> structure, not plain text"
+		},
+		"unlock_method": {
+			"text": "Build the Monastery Blueprint, which you can unlock by clearing the Gory x Grasslands biome.",
+			"style": "text-zinc-300"
+		}
+	},
+
+	"scraping_strategy": {
+		"difficulty_color_mapping": {
+			"Easy": "green (text-green-400 border-green-500/50 bg-green-900/30)",
+			"Medium": "yellow (text-yellow-400 border-yellow-500/50 bg-yellow-900/30)",
+			"Hard": "red (text-red-400 border-red-500/50 bg-red-900/30)",
+			"Expert": "TBD - need example"
+		},
+		"quirks_handling": "Always uses <ul><li> structure when quirks exist, regardless of count (1 or multiple)"
+	}
+}

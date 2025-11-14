@@ -1,0 +1,144 @@
+{
+	"description": "Ejemplo de COMBO DE ITEM MÚLTIPLE (4 componentes - CUÁDRUPLE)",
+	"html_row": "<tr class=\"border-b border-zinc-800 hover:bg-zinc-800/30 transition-colors bg-zinc-900/20 cursor-pointer \"><td class=\"px-6 py-4\"><div class=\"relative inline-block \"><div class=\"w-12 h-12 relative cursor-help\"><img alt=\"Deadeye's Cross\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-contain\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_deadeyes%20cross.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_deadeyes%20cross.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_deadeyes%20cross.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_deadeyes%20cross.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_deadeyes%20cross.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_deadeyes%20cross.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_deadeyes%20cross.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_deadeyes%20cross.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_deadeyes%20cross.png&amp;w=3840&amp;q=75\"></div></div></td><td class=\"px-6 py-4 text-white font-medium\">Deadeye's Cross</td><td class=\"px-6 py-4 text-zinc-300\">Creates a new weapon with greater accuracy and improved critical damage</td><td class=\"px-6 py-4\"><div class=\"flex flex-wrap gap-1\"><span class=\"px-2 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 text-xs font-semibold rounded\">Crit</span><span class=\"px-2 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 text-xs font-semibold rounded\">Damage</span></div></td><td class=\"px-6 py-4\"><div class=\"flex flex-col items-start gap-2\"><span class=\"px-3 py-1 bg-purple-900/30 border border-purple-500/50 text-purple-400 text-xs font-semibold rounded-full\">Evolved</span><div class=\"flex flex-wrap gap-2\"><div class=\"flex items-center gap-2\"><div class=\"flex items-center gap-2\"><div class=\"flex flex-col items-center gap-1\"><div class=\"w-10 h-10 relative\"><img alt=\"Diamond Hilted Dagger\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-contain\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_diamond%20hilted%20dagger.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_diamond%20hilted%20dagger.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_diamond%20hilted%20dagger.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_diamond%20hilted%20dagger.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_diamond%20hilted%20dagger.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_diamond%20hilted%20dagger.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_diamond%20hilted%20dagger.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_diamond%20hilted%20dagger.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_diamond%20hilted%20dagger.png&amp;w=3840&amp;q=75\"></div><span class=\"text-xs text-zinc-400 text-center max-w-[80px]\">Diamond Hilted Dagger</span></div></div><div class=\"flex items-center gap-2\"><span class=\"text-zinc-500 text-lg font-bold\">+</span><div class=\"flex flex-col items-center gap-1\"><div class=\"w-10 h-10 relative\"><img alt=\"Emerald Hilted Dagger\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-contain\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_emerald%20hilted%20dagger.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_emerald%20hilted%20dagger.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_emerald%20hilted%20dagger.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_emerald%20hilted%20dagger.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_emerald%20hilted%20dagger.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_emerald%20hilted%20dagger.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_emerald%20hilted%20dagger.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_emerald%20hilted%20dagger.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_emerald%20hilted%20dagger.png&amp;w=3840&amp;q=75\"></div><span class=\"text-xs text-zinc-400 text-center max-w-[80px]\">Emerald Hilted Dagger</span></div></div><div class=\"flex items-center gap-2\"><span class=\"text-zinc-500 text-lg font-bold\">+</span><div class=\"flex flex-col items-center gap-1\"><div class=\"w-10 h-10 relative\"><img alt=\"Ruby Hilted Dagger\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-contain\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_ruby%20hilted%20dagger.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_ruby%20hilted%20dagger.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_ruby%20hilted%20dagger.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_ruby%20hilted%20dagger.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_ruby%20hilted%20dagger.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_ruby%20hilted%20dagger.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_ruby%20hilted%20dagger.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_ruby%20hilted%20dagger.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_ruby%20hilted%20dagger.png&amp;w=3840&amp;q=75\"></div><span class=\"text-xs text-zinc-400 text-center max-w-[80px]\">Ruby Hilted Dagger</span></div></div><div class=\"flex items-center gap-2\"><span class=\"text-zinc-500 text-lg font-bold\">+</span><div class=\"flex flex-col items-center gap-1\"><div class=\"w-10 h-10 relative\"><img alt=\"Sapphire Hilted Dagger\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-contain\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_sapphire%20hilted%20dagger.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_sapphire%20hilted%20dagger.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_sapphire%20hilted%20dagger.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_sapphire%20hilted%20dagger.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_sapphire%20hilted%20dagger.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_sapphire%20hilted%20dagger.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_sapphire%20hilted%20dagger.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_sapphire%20hilted%20dagger.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_sapphire%20hilted%20dagger.png&amp;w=3840&amp;q=75\"></div><span class=\"text-xs text-zinc-400 text-center max-w-[80px]\">Sapphire Hilted Dagger</span></div></div></div></div></div></td></tr>",
+
+	"parsed_data": {
+		"icon": {
+			"alt": "Deadeye's Cross",
+			"src": "/_next/image?url=%2Fimages%2Fitems%2Fpassive_icon_deadeyes%20cross.png&w=3840&q=75",
+			"original_path": "/images/items/passive_icon_deadeyes cross.png"
+		},
+		"name": "Deadeye's Cross",
+		"description": "Creates a new weapon with greater accuracy and improved critical damage",
+		"traits": ["Crit", "Damage"],
+		"type": "Evolved",
+		"is_combo": true,
+		"recipe": {
+			"component_count": 4,
+			"components": [
+				{
+					"name": "Diamond Hilted Dagger",
+					"image": "/images/items/passive_icon_diamond hilted dagger.png",
+					"item_id": "diamond_hilted_dagger"
+				},
+				{
+					"name": "Emerald Hilted Dagger",
+					"image": "/images/items/passive_icon_emerald hilted dagger.png",
+					"item_id": "emerald_hilted_dagger"
+				},
+				{
+					"name": "Ruby Hilted Dagger",
+					"image": "/images/items/passive_icon_ruby hilted dagger.png",
+					"item_id": "ruby_hilted_dagger"
+				},
+				{
+					"name": "Sapphire Hilted Dagger",
+					"image": "/images/items/passive_icon_sapphire hilted dagger.png",
+					"item_id": "sapphire_hilted_dagger"
+				}
+			],
+			"formula": "Diamond Hilted Dagger + Emerald Hilted Dagger + Ruby Hilted Dagger + Sapphire Hilted Dagger"
+		}
+	},
+
+	"critical_discovery": {
+		"warning": "⚠️ ITEMS PUEDEN TENER 4 COMPONENTES (CUÁDRUPLE COMBO)",
+		"implications": [
+			"El sistema necesita soportar NO SOLO 2-3 componentes, sino también 4",
+			"ItemManager debe actualizarse para soportar hasta 4 items en combos",
+			"Configurator necesita opción de 4 componentes para items",
+			"ItemPanel debe permitir seleccionar hasta 4 items"
+		],
+		"separator_count": "3 símbolos '+' = 4 componentes total",
+		"current_implementation": "Actualmente solo soporta 2-3 items, necesita expandirse"
+	},
+
+	"mapping_to_items_json": {
+		"combo_entry": {
+			"key": "diamond_hilted_dagger+emerald_hilted_dagger+ruby_hilted_dagger+sapphire_hilted_dagger",
+			"value": {
+				"result": "deadeyes_cross",
+				"type": "quad_item_combo",
+				"name": "Deadeye's Cross",
+				"description": "4-component item evolution"
+			}
+		},
+		"combo_item_entry": {
+			"key": "deadeyes_cross",
+			"value": {
+				"name": "Deadeye's Cross",
+				"description": "Creates a new weapon with greater accuracy and improved critical damage",
+				"type": "Evolved",
+				"traits": ["Crit", "Damage"],
+				"image": "assets/items/deadeyes_cross.png",
+				"components": [
+					"diamond_hilted_dagger",
+					"emerald_hilted_dagger",
+					"ruby_hilted_dagger",
+					"sapphire_hilted_dagger"
+				],
+				"component_count": 4
+			}
+		}
+	},
+
+	"html_structure_analysis": {
+		"recipe_layout": "Same as 2-component, but with 4 items",
+		"separator_pattern": "Item1 + Item2 + Item3 + Item4",
+		"plus_symbols": 3,
+		"component_count_formula": "plus_symbols + 1 = components (3 + 1 = 4)"
+	},
+
+	"implementation_requirements": {
+		"urgent_changes": [
+			"ItemManager.can_combine_items() debe aceptar hasta 4 items (*item_ids)",
+			"ItemManager.combine_items() debe soportar hasta 4 slots (*slots)",
+			"Configurator debe tener opción para 4 componentes en items",
+			"ItemPanel debe permitir seleccionar hasta 4 items (cambiar límite de 3 a 4)",
+			"Agregar tipo 'quad_item_combo' para identificar combos de 4 items"
+		],
+		"current_limitation": "Sistema implementado solo soporta 2-3 componentes",
+		"fix_priority": "ALTA - Necesario antes de scrapear tabla de items completa"
+	},
+
+	"scraping_logic": {
+		"component_detection": "Count '+' separators: 0=1 item, 1=2 items, 2=3 items, 3=4 items",
+		"max_components": 4,
+		"validation": "Verificar que todos los componentes tengan img + label",
+		"error_handling": "Si hay más de 3 '+' symbols, log warning sobre combo de 5+ items"
+	},
+
+	"comparison_with_powers": {
+		"difference": "Powers tienen máximo 3 componentes, Items pueden tener hasta 4",
+		"reason": "Los '4 daggers hilted' se combinan todos para crear Deadeye's Cross",
+		"impact": "Sistema de items necesita ser más flexible que el de poderes"
+	},
+
+	"all_item_types_summary": {
+		"basic_item": {
+			"example": "Archer's Effigy",
+			"type_badge": "Basic (blue)",
+			"components": 0
+		},
+		"evolved_2_components": {
+			"example": "Cornucopia",
+			"type_badge": "Evolved (purple)",
+			"components": 2,
+			"formula": "Baby Rattle + War Horn"
+		},
+		"evolved_4_components": {
+			"example": "Deadeye's Cross",
+			"type_badge": "Evolved (purple)",
+			"components": 4,
+			"formula": "Diamond + Emerald + Ruby + Sapphire Hilted Daggers"
+		}
+	},
+
+	"notes": [
+		"Este es el primer ejemplo que muestra que los items pueden tener MÁS de 3 componentes",
+		"El límite de slots del juego es 4, lo cual tiene sentido para permitir estos combos",
+		"Necesitamos actualizar TODA la lógica de combos de items para soportar 2-4 componentes",
+		"Configurator de items necesita selector de 2/3/4 componentes",
+		"Los 4 daggers hilted son items básicos que se combinan todos juntos"
+	]
+}

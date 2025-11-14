@@ -1,0 +1,10 @@
+# Gaming UI Framework
+dearpygui>=1.10.0
+
+# Image Processing  
+Pillow>=10.0.0
+
+# Web Scraping (para actualizar datos)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
